@@ -1,0 +1,7 @@
+
+		  <h3>图片专辑</h3>
+<volist name="album" id="a">			
+			<div class="sb_album"><p><a href="{:U('Pic/proPic?pic=1&id='.$_GET['id'].'&aid='.$a['album_id'])}" target="_blank"><empty name="a.album_cover"><img src="__PUBLIC__/images/common/main/no_cover.gif"/><else /><img src="{$a.album_cover}" title="{$a.album_name}" alt="{$a.album_name}" /></empty></a><a href="{:U('Pic/proPic?pic=1&id='.$_GET['id'].'&aid='.$a['album_id'])}" target="_blank" >{$a.album_name}</a></p></div>	
+			<div class="clr"></div>		
+			</volist>			
+			<a href="{:U('Pic/proPic?pic=1&id='.$_GET['id'])}" style="float:right"><h3>全部专辑</h3></a>			  		

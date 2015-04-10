@@ -1,0 +1,8 @@
+<h2>好友请求</h2>
+          <div class="clr"></div>
+      <volist name="applyList" id="apply" empty="暂时没有申请">
+      <div class="bubble_area" id="apply_{$apply.apply_id}"><a href="{:U('Blog/problog?blog=1&id='.$apply['user'])}" target="_blank"><img src="{$apply.avatar}" width="48" height="48" title="{$apply.nickname}" class="message_ava"/></a><div class="triangle-isosceles left"><a href="{:U('Blog/problog?blog=1&id='.$apply['user'])}" target="_blank"><span class="message_name">{$apply.nickname}</span></a>：<in name="apply.apply_status" value="1,2"><span class="apply"><else /><span class="cate_sel"></in>{$apply.apply_message}</span><br/>
+        <in name="apply.apply_status" value="1,2"><a href="javascript:;" fid="{$apply.user}" app_id="{$apply.apply_id}" onclick="add_friend(this)"><span class="agree">同意</span></a> | <a href="javascript:;" app_id="{$apply.apply_id}" onclick="refuse_apply(this)"><span class="disagree">拒绝</span></a><br/></in>{$apply.apply_time|date='Y-m-d H:i',###} <in name="apply.apply_status" value="3,4">| <a href="javascript:;" app_id="{$apply.apply_id}" onclick="delete_feedback(this)"><span class="disagree">删除</span></a></in></div><div class="clr"></div></div>
+      </volist>
+	  <div class="clr"></div>
+	  <p class="pages"><small>&nbsp;&nbsp;&nbsp;</small>{$fpage}</p>

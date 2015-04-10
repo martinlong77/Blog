@@ -1,0 +1,72 @@
+<script type="text/javascript">
+function postBlog(){
+ var content = CKEDITOR.instances.content.getData(); 
+ var status = $('#status:checked').val();
+ var title = $('#title').val();
+ var cid = $('#cid').val();
+ var comment = $('input[name=comment]:checked').val();
+ var tag = $('#tag').val();
+
+ //判断是否禁止转载
+ if (status == undefined) { 
+  status = 0;
+ } else {
+  status = 1;
+ }
+ 
+ $.post('{$operaUrl.submit}',
+       {title:title,status:status,comment:comment,content:content,tag:tag,cid:cid},
+		function(data){
+		 $('#move_result').text(data.info);
+     if (data.status == 1) { $('#move_result').dialog('option','modal',false);}     
+     $('#move_result').dialog('open');		 
+	   if(data.status == 1){
+		  setTimeout(function(){location.href = data.data},1000);
+		 }
+  });
+}
+
+$(function($){
+ //判断是否私博
+ $('#cid').change(function(){
+  var cid = $('#cid').val(); 
+  if (cid == 2){
+   $('#self').attr('checked',true);
+  } else {
+   $('#self').attr('checked',false);
+  }
+ });
+ 
+ //设置私博
+ $('#self').click(function(){
+  var self = $('#self:checked').val();  //不知为什么要checked才行
+  if (self == 1) {
+   $('#cid').val(2);  //打勾时设为私密
+  } else {
+   $('#cid').val(1);  //取消勾时恢复默认
+  }
+ });
+ 
+  //获取关键字
+  $('#get_keyword').mousedown(function(){
+  var content = CKEDITOR.instances.content.getData();
+   $.post('{:U(\'Blog/newBlog?do=put\')}',{content:content});   
+ });
+ 
+ //显示关键字
+ $('#get_keyword').mouseup(function(){
+  $.post('{:U(\'Blog/newBlog?do=get\')}',function(data){ 
+    if (data.status == 1){
+     if (data.data == false) {
+     $('#move_result').text('获取失败,请手动输入或稍后再重试。');
+     $('#move_result').dialog('open');
+     } else {
+     $('#tag').attr('value',data.data);
+     }
+	  } else {
+	   alert(data.info);
+	  }
+   });
+ });
+});
+</script>

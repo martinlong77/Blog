@@ -1,0 +1,58 @@
+<?php if (!defined('THINK_PATH')) exit();?><div class="easyui-panel" data-options="fit:true,title:'<?php echo ($currentpos); ?>',border:false">
+<script type="text/javascript">
+$(function(){	
+	$('#recruit_sub').click(function(){	//提交修改	
+	  content = $('#content').val();
+	  tel = $('#tel').val();
+	  //qq = $('#qq').val();
+	  email = $('#email').val();
+	  id = $('#r_id').val();
+
+  	  if(check_input(content,'内容不能为空')) return false;
+
+	  $.post("<?php echo U('User/recruit_operate?action=other');?>",{content:content,tel:tel,email:email,id:id},function(data){
+		  if(data.status == 1){
+		    $.messager.alert('操作成功',data.info,'info',function(){
+			edit = $('#pagetabs').tabs('exists','修改招聘信息');
+			add = $('#pagetabs').tabs('exists','添加招聘信息');   	
+			if(edit) $('#pagetabs').tabs('close', '修改招聘信息');	//如果存在则关闭该页		
+			if(add) $('#pagetabs').tabs('close', '添加招聘信息');
+			openUrl(data.data,'招聘信息管理',0);   
+		   });
+		  } else {
+		   $.messager.alert('操作失败',data.info,'error'); 
+		  }
+	  });	
+	});				
+});
+
+function check_input(val,text){
+	if(val.length==0) {
+		$.messager.alert('检验输入',text,'error');
+		return 1;
+	}
+}
+</script>
+<form id="operat_edit" style="font-size:13px">
+<table cellspacing="10">
+	<tr>
+		<td width="90">内容：(80字以内)</td>
+        <td><textarea id="content" style="width:280px;height:200px;"><?php echo ($recruit["content"]); ?></textarea></td>
+	</tr>
+	<tr>
+		<td>电话：</td>
+		<td><input id="tel" type="text" value="<?php echo ($recruit["tel"]); ?>" style="width:280px;height:22px" /></td>
+	</tr>
+
+	<tr>
+		<td>邮箱：</td>
+		<td><input id="email" type="text" style="width:280px;height:22px" value="<?php echo ($recruit["email"]); ?>" /></td>
+	</tr>
+	
+	<input type="hidden" id="r_id" value="<?php echo ($recruit["id"]); ?>" />
+	<tr>
+		<td colspan="3"><a id="recruit_sub" class="easyui-linkbutton">发表</a></td>
+	</tr>
+</table>
+</form>
+</div>

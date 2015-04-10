@@ -1,0 +1,5 @@
+[ 2015-01-28T01:35:31+08:00 ] 37.57.231.110 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001099s ]
+

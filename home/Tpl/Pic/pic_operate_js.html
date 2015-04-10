@@ -1,0 +1,82 @@
+<div id="delete_confirm" title="删除确认">
+删除后不可恢复,确定要删除 <span id="del_name"></span> 吗？
+<input type="hidden" id="pic_id" />
+<input type="hidden" id="pic_aid" />
+<input type="hidden" id="pic_path" />
+<input type="hidden" id="del_jump" value="{$navi.jump}" />
+</div>  
+<script type="text/javascript">
+$(function($){   
+  //删除确认
+ $('#delete_confirm').dialog({  
+  autoOpen: false,
+  resizable: false,
+  modal: true,
+  draggable: false,
+  buttons: {
+        '确定':function(){
+         var id = $('#pic_id').val();
+         var path = $('#pic_path').val();  
+         var aid = $('#pic_aid').val();
+         var jump = $('#del_jump').val();  
+         $.post('{:U(\'pic/edit?set=del\')}',
+          {id:id,path:path,aid:aid},
+          function(data){ 
+          if (data.status == 1) {
+           if (jump != 1) {
+            location.href = data.data;
+           } else {
+            $('#id_'+id).hide(500);
+            applyLayout();         
+            //setTimeout('location.reload()',1000);
+           }
+          } else {
+           alert(data.info);
+          }
+         }); 
+        $(this).dialog('close');
+      },
+        '取消':function(){ $(this).dialog('close')}
+  }
+ });
+});
+
+//设置封面
+function set_cover(param){
+ var path = $(param).attr('path');
+ var aid = $(param).attr('aid');
+ $.post('{:U(\'pic/edit?set=cover\')}',
+  {path:path,aid:aid},
+  function(data){
+   $('#move_result').text(data.info);
+   $('#move_result').dialog('open');
+   $('.sb_album:first').children().children().children('img').attr('src',path);
+ });									
+}
+ 
+//用作头像
+function set_avatar(param){
+ var path = $(param).attr('path');
+ $.post('{:U(\'Pic/edit?set=avatar\')}',
+   {path:path},
+   function(data){
+	$('#avatar').attr('src',path);
+    $('#move_result').text(data.info);
+	$('#move_result').dialog('open');
+ });
+}
+		
+//删除图片		
+function del_img(param){ 
+  var id = $(param).attr('id');
+  var path = $(param).attr('path');  
+  var aid = $(param).attr('aid');
+  var name= $(param).attr('name');
+
+  $('#pic_id').val(id);
+  $('#pic_aid').val(aid);  
+  $('#pic_path').val(path);  
+  $('#del_name').text(name);
+  $('#delete_confirm').dialog('open'); 						
+}
+</script>

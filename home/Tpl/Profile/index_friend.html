@@ -1,0 +1,8 @@
+<div class="fbg_resize">
+	朋友 • <a href="{:U('Profile/friendList?about=1&id='.$_GET['id'])}" target="_blank">{$info.friends}</a> <span style="float:right;"><a href="{:U('Profile/friendList?about=1&id='.$_GET['id'])}" target="_blank">查看全部&gt;&gt;</a></span>
+      <div>        
+		<volist name="friendList" id="friend" empty="还没有好友">
+        <a href="{:U('Blog/problog?blog=1&id='.$friend['friend_id'])}" style="float:left;margin-right:30px;_display:inline;" target="_blank"><img src="{$friend.avatar}" width="80" height="80" alt="pix" title="{$friend.nickname}" />
+		<span class="friend_name" title="{$friend.nickname}">{$friend.cut_nickname}</span></a>
+		</volist>		
+      </div> 

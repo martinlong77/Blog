@@ -1,0 +1,10 @@
+		<ul class="pt_list_nb">
+		  <volist name="albumList" id="a">
+		  		 
+		  <li><div class="pt_border"><p><a href="{:U('Pic/proPic?pic=1&id='.$_GET['id'].'&aid='.$a['album_id'])}" target="_blank"><empty name="a.album_cover"><img src="__PUBLIC__/images/common/main/no_cover.gif"/><else /><img src="{$a.album_cover}" title="{$a.album_name}" alt="{$a.album_name}" /></empty></a></p></div>
+			<span class="pic_con"><p><a href="{:U('Pic/proPic?pic=1&id='.$_GET['id'].'&aid='.$a['album_id'])}" target="_blank" style="font-size:16px;color:#3366CC">{$a.album_name}</a>&nbsp; <eq name="Think.get.id" value="$Think.session.id"><notin name="a.album_id" value="1,2"><a href="javascript:;" name="{$a.album_name}" aid="{$a.album_id}" url="{:U('Pic/proPic?id='.$_GET['id'].'&aid='.$a['album_id'])}" onclick="edit_album(this)">[编辑]</a></notin></eq></p></span></li>			  
+		   </volist>
+		  </ul>
+		  <div class="clr"></div>
+		  <p class="pages"><small>&nbsp;&nbsp;&nbsp;</small>{$page}</p>
+		  <include file="Pic:edit_album_js" />

@@ -1,0 +1,25 @@
+<div class="gadget">
+<h2 class="star">{$info.nickname}</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">		  
+		    <notempty name="info.unread_apply"><li><a href="{:U('Profile/reminder?list=friend')}"><span class="prompt">您有 <span class="apply">{$info.unread_apply}</span> 条未读好友申请</span></a></li></notempty>
+		  <notempty name="info.unread_message"><li><a href="{:U('Profile/reminder?list=message')}"><span class="prompt">您有 <span class="apply">{$info.unread_message}</span> 条未读留言</span></a></li></notempty>
+		  <notempty name="info.unread_comment"><li><empty name="comment"><a href="{:U('Profile/reminder?list=pic_comment')}"><else /><a href="{:U('Profile/reminder?list=comment')}"></empty><span class="prompt">您有 <span class="apply">{$info.unread_comment}</span> 条未读评论</span></a></li></notempty>
+		  <li><eq name="navi.user" value="$Think.session.id"><a href="{:U('Profile/editProfile?about=1&set=avatar')}"><img id="avatar" src="{$info.avatar}" /></a><else /><img id="avatar" src="{$info.avatar}" /></eq></li>
+		  <li><span class="info">关注博客:<a href="{:U('Profile/followlist?follow=1&id='.$navi['user'])}" target="_blank">{$info.following}</a></span></li>	
+		  <eq name="navi.user" value="$Think.session.id">
+		    <li><span class="info">我的收藏:<a href="{:U('Blog/collectBlog?blog=1')}" target="_blank">{$info.collect}</a></span></li>
+		  </eq>
+		  <li><span class="info">博客访问:{$info.visits}</span></li>
+		  <li><span class="info">关注人气:<a href="{:U('Profile/fanslist?about=1&id='.$navi['user'])}" target="_blank">{$info.followers}</a></span></li>
+		  <notempty name="Think.session.isLoginIn">   
+		  <eq name="navi.user" value="$Think.session.id">
+		  <li><a href="{:U('Profile/reminder?list=friend')}"><span class="apply">消息中心(<empty name="unread_news"><span><else /><span class="retitle"></empty>{$info.unread_news}</span>)</span></a></li>
+		  <li><button class="button gray large" onClick="logout()">登出</button></li>		
+		  <else />
+		  <include file="Pub:rela_opera" /> 		
+		  </eq>			    
+		  </notempty> 
+          </ul>
+		  </div>
+	  

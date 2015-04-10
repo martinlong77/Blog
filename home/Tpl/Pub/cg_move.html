@@ -1,0 +1,13 @@
+		  <h3>转移到:
+		  <select id="cg_id">
+		  <empty name="cateList">
+		  <empty name="selectAlbum">
+		  <volist name="cate_group" id="cg"><option value="{$cg.cg_id}">{$cg.name}</option></volist>
+		  <else />
+		  <volist name="selectAlbum" id="sa"><option value="{$sa.aid}">{$sa.name}</option></volist>
+		  </empty>
+		  <else />
+		  <volist name="cateList" id="ca"><option value="{$ca.category_id}">{$ca.category_name}</option></volist>	  		
+		  </empty>
+		  </select></h3>	  	
+		  <input type="hidden" id="pf_id" value="" />

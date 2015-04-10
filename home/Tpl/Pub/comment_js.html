@@ -1,0 +1,143 @@
+<script type="text/javascript">
+<empty name="_GET.list">
+function check_len(){	  //检查留言长度
+  input_len = $('#message').val().length;
+  input_len = 240-input_len;	
+  if (input_len < 0) {
+    $('#sub_btn').css({background:'#FF6600'});  	
+  	$('#sub_btn').attr('onclick','enter_error()');
+  	$('#charcount').css('color','red');    
+  	enter_error();
+  } else {
+  	 if ($('#sub_btn').attr('onclick') == 'enter_error()') {
+  	  $('#sub_btn').css({background:''}); 
+  	  $('#sub_btn').attr('onclick','send_comment()');
+  	  $('#charcount').css('color','#999999');
+  	 } 
+  }	  
+  $('#charcount').html(input_len);
+}
+
+function send_comment(){   //留言
+  var id = $('#id').val();
+  var uid = {$_SESSION.id};
+  var message = $('#message').val();
+  var verify = $('#verify').val();
+  $.post('{$navi.comment_url}',
+         {id:id,uid:uid,message:message,verify:verify},
+		 function(data){
+		 if (data.status == 1) {
+		  com = data.data;
+      var com_con = '<div><img src="{$Think.session.avatar}" width="48" height="48" alt="user" class="userpic"/><p>我 (' + com.comment_time + ') 说： <a href="javascript:;" onclick="del_com(this)" id="{$_GET.id}" cid="'+ com.new_id +'">[删除]</a><br /></p><p>' + com.comment_content + '</p></div>';		  
+		  $('#comment_list').append(com_con);
+      var time = new Date().getTime();
+		  $('#ver_pic').attr('src','__APP__/Pub-verify-'+time);
+      $('#message').val('');
+      $('#charcount').text('240');
+		 } else {
+		  $('#send_error').html(data.info).show();
+		  setTimeout(function(){
+  		  $('#send_error').hide();
+ 		  },2000);
+		 }
+  });
+}
+
+function enter_error() {    //留言输入错误提示
+  str = $('#message').val();
+  content = str.substr(0,240);
+  $('#message').val(content);
+  $('#message').css({background:'#FF3300'});
+  setTimeout(function(){ $('#message').css({background:'#FFFFFF'})},200);
+}
+
+function change_pic(){  //刷新验证码
+  var time = new Date().getTime();  
+  $('#ver_pic').attr('src','__APP__/Pub-verify-'+time);
+}
+</empty>
+//发送回复
+function send_reply() {   
+  var id = $('#id').val();
+  var uid = {$_SESSION.id};
+  var reply_content = $('#reply_content').val();
+  var name = $('#reply_name').val();
+  var url = $('#reply_url').val();
+  var reply_to = $('#reply_to').val();  
+  $.post('{$navi.comment_url}',
+         {id:id,uid:uid,message:reply_content,reply_to:reply_to,name:name,url:url},
+     function(data){
+     if (data.status == 1) {
+      <empty name="_GET.list">
+      com = data.data;
+        var com_con = '<div><img src="{$Think.session.avatar}" width="48" height="48" alt="user" class="userpic"/><p>我 (' + com.comment_time + ') 说： <a href="javascript:;" onclick="del_com(this)" id="{$_GET.id}" cid="'+ com.new_id +'">[删除]</a><br /></p><p>回复<a href="'+ url +'" target="_blank">'+ name +'</a>: ' + com.comment_content + '</p></div>';
+    
+      $('#comment_list').append(com_con);
+      <else />
+      $('#login_out').dialog('option','title','回复结果');      
+      $('#login_out').on('dialogopen', function( event, ui ) {setTimeout(function(){ $('#login_out').dialog('close')},1500);});
+      $('#login_out').html(data.info);  
+      $('#login_out').dialog('open');
+      </empty>
+       $('#reply_area').remove();
+     } else {
+      $('#reply_error').html(data.info).show();
+      setTimeout(function(){
+        $('#reply_error').hide();
+      },2000);
+     }
+  });  
+}
+
+function set_reply(param) {  //回复操作  
+  var reply_name = $(param).attr('reply_name');
+  var reply_url = $(param).attr('reply_url');
+  var reply_to = $(param).attr('reply_to');
+  <notempty name="_GET.list">
+  var id = $(param).attr('orignal_id');
+  $('#id').val(id);
+  </notempty>
+  $('#reply_name').val(reply_name);
+  $('#reply_url').val(reply_url);
+  $('#reply_to').val(reply_to);
+  $('#reply_area').remove(); 
+  var reply_area = '<span id="reply_area">回复<span class="retitle">'+ reply_name +':</span> <input type="text" id="reply_content" class="big" onkeyup="reply_max()" onkeypress="reply_max()" /><br/><input type="button" class="button white" value="回复" onclick="send_reply()" /><input type="button" class="button gray" value="关闭" onclick="close_reply()"><span class="result" id="reply_error"></span></span>';
+  <notempty name="_GET.list">
+  $(param).parent().append(reply_area);
+  <else />
+  $(param).parent().parent().append(reply_area);
+  </notempty>
+  $('html,body').animate({scrollTop: $(param).offset().top}, 1000); //平滑效果
+}
+
+function reply_max() {  //检查回复长度
+  input_len = $('#reply_content').val().length;
+  input_len = 140-input_len;
+  if (input_len < 0) {
+    str = $('#reply_content').val();
+    content = str.substr(0,140);
+    $('#reply_content').val(content);
+  };  
+}
+
+function close_reply(){ //关闭回复框
+  $('#reply_area').remove();
+}
+		  
+//删除评论
+function delete_comment(param){
+ if (confirm('删除这条评论吗？')) {	
+ var id = $(param).attr('id');
+ var cid = $(param).attr('cid'); 
+ $.post('{$navi.del_com_url}',
+ {id:id,cid:cid},
+ function(data){
+  if(data.status != 1){
+   alert(data.info);
+  } else {
+   $(param).parent().parent().hide(500);
+  }
+ });
+ }  
+}
+</script>

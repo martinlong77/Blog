@@ -1,0 +1,8 @@
+<form action="javascript:;" method="post" id="pass">
+		  <p><label for="old_pword" id="profileinfo">当前密码：</label><input type="text" id="old_pword" class="small" /></p>
+		  <p><label for="new_pword" id="profileinfo" style="margin-left:16px;">新密码：</label><input type="password" id="new_pword" class="small" /></p>
+		  <p><label for="new_repword" id="profileinfo">确认密码：</label><input type="password" id="new_repword" class="small" /></p>
+		  <input type="hidden" name="uid" value="{$Think.session.ID}" />
+		  <input type="submit" value="修改" class="button orange"/>
+		  </form>
+		  <p><span class="result"></span></p>

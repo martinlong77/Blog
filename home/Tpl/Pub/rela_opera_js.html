@@ -1,0 +1,84 @@
+<script type="text/javascript">
+$(function($){
+ //加关注
+ $('#follow').click(function(){
+ var fid = $('#follow').attr('fid');
+  $.post('{:U(\'Profile/rela?set=follow\')}',
+     {fid:fid},
+     function(data){
+      $('#follow').hide();
+      $('#new_fol').show();
+  });
+ });
+ 
+ //鼠标移动到关注上面显示效果
+ $('#new_fol').mouseenter(function(){
+  $('#followed').hide();
+  $('#unf_btn').show();
+ });
+ 
+ $('#new_fol').mouseleave(function(){
+  $('#followed').show();
+  $('#unf_btn').hide();
+ });
+ 
+ //取消关注
+ $('#unfollow').click(function(){
+  var fid = $('#unfollow').attr('fid');
+  $.post('{:U(\'Profile/rela?set=unFollow\')}',
+     {fid:fid},
+     function(data){
+      $('#new_fol').hide();
+      $('#follow').show();
+  });
+ });
+ 
+  //显示加好友表单
+ $('#add_fri').click(function(){
+  $('#apply_area').show(500);
+  $('#add_fri').hide();
+ });
+ 
+  //关闭加好友表单
+ $('#cancel').click(function(){
+  $('#add_fri').show(500);
+  $('#apply_area').hide();
+ });
+ 
+ //提交添加好友申请
+ $('#send_apply').click(function(){
+  var fid = $('#fri_id').val();
+  var app_mes = $('#app_mes').val();
+  $.post('{:U(\'profile/rela?set=apply\')}',
+        {friend:fid,message:app_mes},
+		 function(data){
+		  $('#apply_area').hide();
+		  $('#wait_app').show();
+  });
+ });
+ 
+ //取消申请
+ $('#un_app').click(function(){
+  var fid = $('#un_app').attr('fid');
+  $.post('{:U(\'Profile/rela?set=unApply\')}',
+        {fid:fid},
+  		function(data){
+	     $('#wait_app').hide();
+		   $('#add_fri').show();	
+  });
+ });
+ 
+ //解除关系
+ $('#break').click(function(){
+  if(confirm('确定和TA解除朋友关系吗？')){
+   var fid = $('#break').attr('fid');
+   $.post('{:U(\'Profile/rela?set=reFriend\')}',
+    {fid:fid},
+	function(){
+     $('#now_fri').hide();
+	   $('#add_fri').show();
+   });
+  }
+ }); 
+});
+</script>

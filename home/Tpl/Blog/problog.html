@@ -1,0 +1,69 @@
+
+<include file="Pub:common_head" />
+<include file="Pub:cg_head" />
+<title>{$info.nickname}_果冻写</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+    </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+		<empty name="Think.get.cid">
+		<include file="Blog:top_content" />		  		 
+		<if condition="($postList eq NULL) AND ($top eq NULL)"><span class="info"><eq name="Think.get.id" value="$Think.session.id">您还没有写过博客哦，马上<a href="{:U('blog/newblog?new=1')}">写一篇</a>记录一下生活吧~<else />博主暂时还没有写过博客哦</eq></span><else />
+		  <div id="ajax_content"> 		  
+		  <include file="Blog:article" />
+		  </div>
+		  <eq name="_SESSION.id" value="$_GET.id">
+			<include file="Blog:blog_self_js" />
+			<else />
+			<include file="Blog:blog_other_js" />
+			</eq>
+		  </if>
+		  <else />
+		  <empty name="postList"><font size="+1">这个分类下暂时还没有文章。</font>
+		   <else />
+		  <div id="ajax_content"> 		  
+		  <include file="Blog:article" />
+		  </div>	
+		</empty>
+		</empty>
+		</div>
+      </div>
+      <div class="sidebar">
+        
+          <include file="Pub:info" />
+        
+		<div class="gadget">
+          <h2 class="star">文章分类</h2>
+          <div class="clr"></div>
+          <ul class="ex_menu" id="category_list">
+		  <volist name="cateList" id="c" empty="暂时还没有分类">
+		  <eq name="c.category_id" value="$Think.get.cid">
+		  <li id="cg_id_{$_GET.aid}"><a href="{:U('Blog/proBlog?blog=1&id='.$c['user'])}"><span class="apply">{$c.category_name}</span></a></li>
+		  <else />
+            <li id="cg_id_{$c.category_id}"><a href="{:U('Blog/proBlog?blog=1&id='.$c['user'].'&cid='.$c['category_id'])}"><span class="agree">{$c.category_name}</span></a></li>
+			</eq>
+			</volist>
+			</ul>
+			<p></p>
+			<eq name="Think.get.id" value="$Think.session.id">			
+			<include file="Pub:cg_dialog_opera" />
+			</eq>
+          
+        </div>
+        <include file="Pub:recommend" />
+		</div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+  <include file="Pub:common_foot" />
+</div>
+</body>
+<include file="Blog:blog_common_js" />
+</html>

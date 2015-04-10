@@ -1,0 +1,46 @@
+<include file="Pub:common_head" />
+<include file="Pub:cg_head" />
+<title>我的关注_{$_SESSION.nickname}的博客_果冻写</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+		<h2>我的关注</h2>
+		<div id="fb_content">
+		<include file="fb_content" />
+		</div>
+      </div>
+	  </div>
+      <div class="sidebar">
+        <include file="Pub:info" />
+		<div class="gadget">
+          <h2 class="star">分组</h2>
+          <div class="clr"></div>
+          <ul class="ex_menu" id="fgb_list">
+		  <volist name="groupList" id="g" empty="您还没有分组，分组以后查看更新更方便哦~">
+		  <eq name="g.group_id" value="$Think.get.gid">
+		  <li id="cg_id_{$_GET.id}"><a href="{:U('Blog/followBlog?follow=1')}"><span class="cate_sel">{$g.group_name}</span></a></li>
+		  <else />
+            <li id="cg_id_{$g.group_id}"><a href="{:U('Blog/followBlog?follow=1&gid='.$g['group_id'])}"><span class="category">{$g.group_name}</span></a></li>
+			</eq>
+			</volist>
+          </ul>
+		  <include file="Pub:cg_dialog_opera" />
+        </div>
+        <include file="Pub:recommend" />
+		</div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Pub:common_foot" />
+</div>
+</body>
+<include file="Blog:blog_common_js" />
+</html>

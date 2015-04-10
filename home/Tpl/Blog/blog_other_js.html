@@ -1,0 +1,14 @@
+<script type="text/javascript">
+//转载
+function reproduced(param){
+ var pid = $(param).attr('pid');
+ $.post('{:U(\'Blog/reproduced\')}',
+    {pid:pid},
+    function(data){
+	 $('#move_result').text(data.info);
+	 $('#move_result').dialog('open');
+  	 setTimeout(function(){location.reload()},1000);	
+ });
+}
+
+</script>

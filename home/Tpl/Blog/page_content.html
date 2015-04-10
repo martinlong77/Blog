@@ -1,0 +1,37 @@
+<span><h2>{$info.post_title} &nbsp;<span><notempty name="info.reproduced">转载时间：</notempty>({$info.post_createtime|date='Y-m-d H:i',###})</span></h2> <notempty name="Think.session.isLoginIn"><empty name="info.post_status"><empty name="info.reproduced"><eq name="info.user" value="$Think.session.id"><else /><span class="art_rep"><a href="javascript:;" onclick="reproduced(this)" pid="{$info.post_id}">＋转载</a></span></eq></empty></empty></notempty></span>
+          <div class="clr"></div>
+          <p><span class="tag">标签: </span>
+            <foreach name="info.post_tag" item="tag"><a href="{:U('Pub/search?search='.$tag)}">{$tag}</a>&nbsp;&nbsp;</foreach></p>
+          <p>{$info.post_content}</p>         
+          <p> <font color="#999999">{$info.readcount}</font> <strong>阅读</strong> <span>&nbsp;&bull;&nbsp;<font color="#999999">{$info.comcount}</font> <strong>评论</strong> </span>  <notempty name="Think.session.isLoginIn"><span>&nbsp;&bull;&nbsp;</span> <empty name="info.post_status"><empty name="info.reproduced"><eq name="info.user" value="$Think.session.id"><font color="#999999">{$info.reproduced_count}</font> <strong>转载</strong><else /><font color="#999999">{$info.reproduced_count}</font> <a href="javascript:;" onclick="reproduced(this)" pid="{$info.post_id}"><strong>转载</strong></a></eq><else />转载</empty><else />禁止转载</empty> <span>&nbsp;&bull;&nbsp;</span> 
+            <in name="info.post_id" value="$_SESSION.collectId"><a href="javascript:;" onclick="uncol_art(this)" aid="{$info.user}" pid="{$info.post_id}">取消收藏</a><else /> <a href="javascript:;" onclick="col_art(this)" aid="{$info.user}" pid="{$info.post_id}">收藏</a></in></notempty> 
+		  
+            <switch name="info.user"> 
+			<case value="$Think.session.id"><empty name="info.reproduced"><span>&nbsp;&bull;&nbsp;</span> <a href="{:U('Blog/editArticle?blog=1&id='.$info['post_id'])}">编辑</a>  </empty>&nbsp;&bull;&nbsp; <a href="javascript:;" onclick="del_art(this)" pid="{$info.post_id}" uid="{$info.user}" name="{$info.post_title}" >删除</a></case><default />
+			<notempty name="Think.session.isLoginIn"><span>&nbsp;&bull;&nbsp;</span> <a href="{:U('Blog/reproduced?id='.$m['post_id'])}">举报</a></notempty>
+            </switch>
+			</p>
+		  
+		  <!-- 上一篇 -->
+		  <p><span class="info">上一篇：<eq name="info.prev" value="">没有了<else /><a href="{:U('Blog/page?id='.$info['prev']['id'])}"><strong>{$info.prev.title}</strong></a></eq></span></p>
+			
+			<!-- 下一篇 -->
+			<span class="info">下一篇：<eq name="info.next" value="">没有了<else /><a href="{:U('Blog/page?id='.$info['next']['id'])}"><strong>{$info.next.title}</strong></a></eq></span>
+			<eq name="_SESSION.id" value="$info.user">
+			<include file="Blog:blog_self_js" />
+			<else />
+			<script type="text/javascript">
+$(function($){
+//转移结果
+ $('#move_result').dialog({
+	autoOpen: false,
+	resizable: false,
+	modal: true,
+	draggable: false
+ });
+});
+			</script>
+			<div id="move_result" title="操作结果">	
+		  	</div>
+			<include file="Blog:blog_other_js" />
+			</eq>

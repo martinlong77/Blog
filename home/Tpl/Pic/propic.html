@@ -1,0 +1,54 @@
+<include file="Pub:common_head" />
+<title>专辑列表_{$info.nickname}的照片_JellyNotes</title>
+<notempty name="Think.get.aid">
+<link type="text/css" href="__PUBLIC__/js/wookmark/css/style.css" rel="stylesheet" />
+<script type="text/javascript" src="__PUBLIC__/js/wookmark/jquery.imagesloaded.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/wookmark/jquery.wookmark.min.js"></script>
+</notempty>
+
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize">
+	 <div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+          <div class="clr"></div>		  
+		  <!-- 图片列表 -->		  
+		  <empty name="Think.get.aid">
+			<h2>专辑列表</h2>
+		  <include file="Pic:album" />
+		  <else />
+		  <include file="Pic:album_name" />	  		  		  
+      	  <include file="Pic:pic_content" /> 	   
+		  </empty>		    		 				  		
+		  </div> 	
+      </div>
+      <div class="sidebar">
+	  <include file="Pub:info" />	 
+	  <div class="gadget">          
+          <div class="clr"></div>
+		  <notempty name="Think.get.aid">       	 		  
+		  <include file="Pic:propic_sidebar" />
+		  <div class="clr"></div> 			          
+		</notempty>
+		<p class="spec"></p>
+		<eq name="Think.get.id" value="$Think.session.id">			
+		<include file="Pub:cg_dialog_opera" />
+		<p class="spec"></p>
+		<a href="{:U('Pic/poNew?new=1')}" class="button blue large">上传图片</a>
+		</eq>
+		</div>
+      </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Pub:common_foot" />
+</div>
+</body>
+</html>

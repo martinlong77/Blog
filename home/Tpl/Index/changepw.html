@@ -1,0 +1,48 @@
+<include file="Pub:common_head" />
+<title>果冻记_登陆果冻</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/ThinkBox/css/ThinkBox.css" media="all">
+<script type="text/javascript" src="__PUBLIC__/js/ThinkBox/jquery.ThinkBox.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Index:index_navi" /> 
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">       
+            <div class="clr"></div>			
+		<h2 class="star">设置您的新密码</h2>
+		  <p><span id="profileinfo" style="margin-left:16px;">新密码：</span><input type="password" id="pword" class="small" /></p>
+		  <p><span id="profileinfo">确认密码：</span><input type="password" id="repword" class="small" /></p>
+		  <p><input type="button" id="sub_form" value="修改" class="button orange"/></p>
+		  <span id="result" class="result" style="display:none;"></span>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Index:index_bottom" />
+</div>
+<script type="text/javascript">
+$(function($){
+ //改密
+ $('#sub_form').click(function(){
+  $.post('{:U(\'index/newPw\')}',
+         {pword:$('#pword').val(),repword:$('#repword').val()},
+		function(data){
+          if (data.status != 1){
+  	       $('.result').text(data.info).show();
+		   setTimeout(function(){ $('#result').hide()},2000);
+		  } else {
+		   $.ThinkBox.success(data.info,{'delayClose':1000});
+		   setTimeout(function(){location.href = data.data},2000);
+		  }
+  });
+ });
+});
+ </script>
+</body>
+</html>

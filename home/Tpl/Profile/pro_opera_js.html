@@ -1,0 +1,55 @@
+<script type="text/javascript">
+//鼠标移动到关注上面显示效果
+function on_unfollow(param){
+  $(param).text('取消关注');
+}
+ 
+//鼠标移开效果
+function out_unfollow(param){
+  $(param).text('正在关注');
+}
+ 
+//取消关注
+function unfollow(param){
+  var fid = $(param).attr('fid');
+  $.post('{:U(\'Profile/rela?set=unFollow\')}',
+     {fid:fid},
+     function(data){
+      $(param).parent().hide(300);
+  });
+}
+
+//移除粉丝
+function move_fans(param){
+ if(confirm('确定移除吗？')){
+  var fid = $(param).attr('fid');
+  $.post('{:U(\'Profile/rela?set=moveFans\')}',
+     {fid:fid},
+     function(data){
+      $(param).parent().hide(300);
+  });
+ }
+}
+
+//鼠标移动到关注上面显示效果
+function on_friend(param){
+  $(param).text('解除关系');
+}
+ 
+//鼠标移开效果
+function out_friend(param){
+  $(param).text('我的好友');
+}
+ 
+//移除好友
+function on_break(param){
+ if(confirm('确定和TA解除朋友关系吗？')){
+  var fid = $(param).attr('fid');
+  $.post('{:U(\'Profile/rela?set=reFriend\')}',
+     {fid:fid},
+     function(data){
+      $(param).parent().hide(300);
+  });
+ }
+}
+</script>

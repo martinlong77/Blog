@@ -1,0 +1,49 @@
+<script type="text/javascript">
+$(function($){
+ //找回密码
+ $('#sub_form').click(function(){
+  $('.result').text('正在验证账号，请稍等...').show();    
+  $.post('{:U(\'index/getMail\')}',
+    {uname:$('#uname').val(),verify:$('#verify').val()},
+    function(data){           
+	 	 if (data.status == 1){      
+      var content = '<a href="'+data.data+'"><span class="category">'+data.info+'</span></a>';
+      $('.article').html(content);
+	 	 } else {
+	 	  $('.result').text(data.info).show();
+		  setTimeout(function(){ $('.result').hide()},2000);
+	     }
+   });
+ });
+ 
+  //提交注册表单
+ $('#reg_form').click(function(){
+  $.post('{:U(\'Index/registered\')}',
+   	{uname:$('#reg_uname').val(),pword:$('#reg_pword').val(),disname:$('#reg_disname').val(),npword:$('#reg_npword').val(),email:$('#reg_email').val(),verify:$('#verify').val()},		
+    function(data){
+		 if (data.status == 1){
+      $('.article').html(data.info);
+      $('.menu_nav').html(' ');
+      $('.fmenu').html(' ');
+      var wait = document.getElementById('wait_time');
+      var interval = setInterval(function(){      
+       var time = --wait.innerHTML;
+       if(time <= 0) {
+        location.href = data.data;
+        clearInterval(interval);
+       }
+      },1000);
+	 	 } else {		 
+	 	  $('#reg_result').html(data.info).show();
+		  setTimeout(function(){ $('#reg_result').hide()},2000);
+	   }	
+  });
+ });
+});
+ 
+//刷新验证码
+ function change_ver(){
+  var time = new Date().getTime();	
+  $('#ver_pic').attr('src','__APP__/Pub-verify-'+time);
+ }
+ </script>

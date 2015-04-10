@@ -1,0 +1,39 @@
+<h2 id="album_title">{$albumInfo.name}</h2>
+		  <eq name="Think.get.id" value="$Think.session.id"><notin name="Think.get.aid" value="1,2"><div id="modi_album" style="display:none"><p><input type="text" value="{$albumInfo.name}" id="album_name" class="small"/> <span id="edit_result" class="result" style="display:none"></span><p/><input type="hidden" id="aid" value="{$_GET.aid}" /><input type="button" onclick="edit_album()" value="保存" class="button white"/> &nbsp;&nbsp <input type="button" value="取消" class="button black" onclick="close_edit()"></div>
+		  </notin></eq>	
+		  <p><span id="album_info">创建时间({$albumInfo.time|date='Y-m-d H:i',###})&nbsp;|&nbsp; 图片 ({$albumInfo.count})<eq name="Think.get.id" value="$Think.session.id"><notin name="Think.get.aid" value="1,2"> &nbsp;|&nbsp; <a href="javascript:;" onclick="open_edit()">编辑</a></notin></eq></span>	
+<eq name="Think.get.id" value="$Think.session.id"><notin name="Think.get.aid" value="1,2">
+<script type="text/javascript">
+ //显示设置专辑名称表单
+function open_edit(){
+ $('#album_title').hide();
+ $('#album_info').hide();
+ $('#modi_album').show();
+}
+ 
+//隐藏表单
+function close_edit(){
+  $('#album_title').show();
+  $('#album_info').show();
+  $('#modi_album').hide();
+} 
+ 
+ //提交修改
+function edit_album(){
+  var name = $('#album_name').val();
+  var aid = $('#aid').val();
+  $.post('{$operaUrl.edit}',
+         {cg_id:aid,name:name},
+         function(data){
+		 if (data.status == 1) {
+  		  $('#album_title').html(name).show();
+  		  $('#album_info').show();
+   		  $('#modi_album').hide();
+  		 } else {
+		  $('#edit_result').html(data.info).show();
+		  setTimeout(function(){ $('#edit_result').hide();},2000);
+		 }
+  });
+}
+</script>
+</notin></eq>

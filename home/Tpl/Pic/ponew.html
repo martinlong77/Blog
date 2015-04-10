@@ -1,0 +1,32 @@
+<include file="Pub:common_head" />
+<title>上传图片_{$_SESSION.nickname}_JellyNotes</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uploadify/uploadify.css" />
+<script src="__PUBLIC__/js/uploadify/jquery.uploadify.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize3">
+		  <p><span class="info">选择专辑：</span> 
+		    <select id="cid" style="font-size:16px;"><volist name="albumList" id="a"><option value="{$a.album_id}"/>{$a.album_name}</option></volist></select>
+		    &nbsp; <include file="Pub:cg_dialog_opera" /></p>(每次最多上传10张图片，每张图片大小最大2M)
+		    <input id="file_upload" name="file_upload" type="file" multiple="true">
+			<span class="result" style="display:none"></span>
+			<!--显示结果--><div id="uploadsuccess" style="display:none;"></div>
+      		<div class="clr"></div>
+			<p class="spec"></p>
+		   <p><input type="button" value="上传图片" id="upload_now" class="button blue" style="margin-left:40%"/> &nbsp;<input type="button" value="重新选择" id="re_choose" class="button white"/></p>
+		   
+    </div>
+  </div>
+</div>
+<div id="uploading" title="上传进程">	
+</div>
+<include file="Pic:upload_js" />
+</body>
+</html>

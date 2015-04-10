@@ -1,0 +1,50 @@
+<include file="Pub:common_head" />
+<title>果冻记_加入果冻</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Index:index_navi" /> 
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">       
+            <div class="clr"></div>
+		<h2 class="star">欢迎加入果冻记！</h2>
+		 <p>简单快捷的注册 :) &nbsp;&nbsp;(以下项目都必填哦~)</p>	
+         <p><span class="retitle">账号:</span> 
+           <input type="text" id="reg_uname" class="small" style="margin-left:28px;"/>
+(6-20 位长度)</p>
+<p><span class="retitle">密码:</span> 
+  <input type="password" id="reg_pword" class="small" style="margin-left:28px;"/>
+(6-20 位长度)</p>
+<p><span class="retitle">重复密码:</span> <input type="password" id="reg_npword" class="small"/>
+  (重复上面的密码)</p>
+<p><span class="retitle">果冻昵称:</span> <input type="text" id="reg_disname" class="small"/></p>				
+<p><span class="retitle">Email:</span>
+  <input type="text" id="reg_email" class="small" style="margin-left:20px;"/></p>
+<p><span class="profileinfo">请输入验证码</span>:
+    <input type="text" id="verify" size="6"/></span> <img id="ver_pic" src="{:U('Pub/verify')}" onClick="change_ver()" style="cursor:pointer" />  &nbsp;<a href="javascript:;" onclick="change_ver()" class="comprompt">看不清?换一张</a></p>
+	<div id="reg_result" class="result"></div>
+		<p><input type="button" value="加入果冻！" id="reg_form" class="button orange"/></p>		
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="gadget">
+          <h2 class="star">已有果冻账号？<a href="javascript:;" id="open_login_dialog">直接登陆!</a></h2>
+		<div id="login_dialog" title="用户登陆">
+		  <include file="Pub:login_dialog" />
+		  </div>		  
+        </div>
+        </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+
+<include file="Index:index_bottom" />
+</div>
+<include file="Index:index_opera_js" />
+</body>
+</html>

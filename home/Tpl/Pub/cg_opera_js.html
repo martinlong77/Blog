@@ -1,0 +1,137 @@
+<div id="delete_cg" title="请选择">
+</div>
+<script type="text/javascript">
+  //显示新增分类表
+ $('#add_cg').click(function(){
+  $('#new_cg').show();
+  $('#add_cg').hide();
+ });
+ 
+ //隐藏新增表
+ $('#cancel_add').click(function(){
+  $('#new_cg').hide();
+  $('#add_cg').show();
+ }); 
+
+function create_cg(){
+   //新增分组
+   var name = $('#new_name').val();   
+   $.post('{$operaUrl.add}',
+        {name:name},
+      	function(data){
+	 	 if (data.status == 1){
+		   cg = data.data;
+		   var new_cg = '<p><span class="category">' + name + '</span> &nbsp;<a href="javascript:;" onclick="modi_name(this)" name="' + name + '" cg_id="' + cg.id + '">修改</a> &nbsp;<a href="javascript:;" onclick="del_cg(this)" cg_id="' + cg.id + '">删除</a></p>';		   		   
+		  $('#list').append(new_cg);
+		  
+		  <eq name="_GET.blog" value="1">
+		  //博客页面添加选择分组列表
+		    var new_cg = '<li id="cg_id_'+ cg.id +'"><a href="/index.php/blog-proBlog-blog-1-id-{$_GET.id}-cid-'+cg.id+'"><span class="category">'+ name +'</span></a></li>';
+		   	$('#category_list').append(new_cg);
+		  </eq>
+
+		  <eq name="_GET.follow" value="1">
+		   if ($('#fg_list')) {	//判断是查看关注博客页面还是查看关注页面
+			//关注博客页面到选择分组列表
+		    var new_cg = '<li id="cg_id_'+ cg.id +'"><a href="/index.php/Profile-followList-follow-1-id-1-gid-'+cg.id+'"><span class="category">'+ name +'</span></a></li>';
+		   	$('#fg_list').append(new_cg);
+		   } else {
+		   	var new_cg = '<li id="cg_id_'+ cg.id +'"><a href="/index.php/blog-followBlog-follow-1-id-1-gid-'+cg.id+'"><span class="category">'+ name +'</span></a></li>';
+		   	$('#fgb_list').append(new_cg);
+		   }
+		  </eq>
+
+		  <eq name="_GET.about" value="1">
+		   var new_cg = '<li id="cg_id_'+cg.id+'"><a href="/index.php/blog-id={$_GET.id}-gid-'+cg.id+'"><span class="category">'+ name +'</span></a></li>';
+		   	$('#friend_list').append(new_cg);
+		  </eq>
+		   
+		  if($('#cid')){	//编辑和添加博客页面的添加分组列表
+		    var new_c = '<option value="'+cg.id+'" >'+ name +'</option>';
+		   	$('#cid').append(new_c);
+		  }
+		  
+		  $('#new_name').val('');	//清空输入框
+		  $('#new_cg').hide();
+		  $('#add_cg').show();
+		 } else {
+		  $('#error_result').html(data.info).show();
+		   setTimeout(function(){ $('#error_result').hide()},2000);
+		 } 	    
+   });
+}
+
+//删除分组
+function del_cg(param){
+  if(confirm('确定删除这个分组？')){
+   var cg_id = $(param).attr('cg_id');
+   $.post('{$operaUrl.del}',
+    {cg_id:cg_id},
+    function(data){
+     if(data.status == 1){
+      $(param).parent().hide(300);
+	  if ($('#cg_id_'+cg_id)){
+	   $('#cg_id_'+cg_id).hide();
+	  }
+	  
+	  if ($('#cid')){	//移除添加的分组
+	   $('#cid').val(cg_id);
+	   $('#cid option:selected').remove();
+	   $('#cid').val(1); 
+	  }
+	  
+     } else {
+	  alert(data.info);
+	 }
+   });
+  }
+}
+
+//显示编辑输入框
+function modi_name(info){
+  var cg_id = $('#cg_id').val(); 
+  if (cg_id) {
+  var name = $('#save_name').attr('alt');
+  //还原正在编辑的表单
+  var ori_ele = '<span class="category">' + name + '</span> &nbsp;<a href="javascript:;" onclick="modi_name(this)" name="' + name + '" cg_id="'+ cg_id +'">修改</a> &nbsp;<a href="javascript:;" onclick="del_cg(this)" cg_id="'+ cg_id +'">删除</a>';
+  $('#editing').replaceWith(ori_ele);
+ }
+ 
+ //注意内容多也不要换行！
+ var name = $(info).attr('name');
+ var cg_id = $(info).attr('cg_id');
+ var edit_form = '<div id="editing"><input type="text" id="save_name" alt="'+ name +'" value="'+ name +'" class="small"/><input type="hidden" id="cg_id" value="'+ cg_id +'" /><br/><input type="button" class="button white" value="保存" onclick="edit_name(this)" /> &nbsp;<input type="button" onclick="cancel_modi(this)" class="button black" value="取消" /></div>';
+ $(info).parent().html(edit_form);
+}
+
+//修改分组名
+function edit_name(info){
+  var name = $('#save_name').val();
+  var cg_id = $('#cg_id').val();
+  $.post('{$operaUrl.edit}',
+        {name:name,cg_id:cg_id},
+      	function(data){
+		 if (data.status == 1) {
+		  var get_back = '<span class="category">' + name + '</span> &nbsp;<a href="javascript:;" onclick="modi_name(this)" name="' + name + '" cg_id="' + cg_id + '">修改</a> &nbsp;<a href="javascript:;" onclick="del_cg(this)" cg_id="'+ cg_id +'">删除</a>';
+		  $(info).parent().replaceWith(get_back);
+		 } else {
+		  $('#error_result').html(data.info).show();
+		  setTimeout(function(){ $('#error_result').hide();},2000);
+		 }
+  });
+}
+
+//点击取消修改按钮
+function cancel_modi(info){
+ var cg_id = $('#cg_id').val();
+ var name = $('#save_name').attr('alt');
+ var content = '<span class="category">' + name + '</span> &nbsp;<a href="javascript:;" onclick="modi_name(this)" name="' + name + '" cg_id="' + cg_id + '">修改</a> &nbsp;<a href="javascript:;" onclick="del_cg(this)" cg_id="'+ cg_id +'">删除</a>';
+ $(info).parent().replaceWith(content);
+}
+
+/*
+window.onbeforeunload = on_handle;
+function on_handle(){
+ return '您将关闭本页面';
+}*/ 
+</script>

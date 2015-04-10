@@ -1,0 +1,7 @@
+<div id="new_name" style="display:none">
+			<input type="text" id="img_name" value="{$info.image_title}" class="mid"/>
+			<input type="hidden" id="img_id" value="{$info.image_id}"/>
+			<input type="button" value="保存" onclick="new_name()" class="button white"/> &nbsp;&nbsp; <input type="button" value="取消" id="close_name" class="button gray" /> <span id="name_error" class="result"></span></div><p class="spec"><span class="title">{$info.image_title}</span> &nbsp;({$info.image_createtime|date='Y-m-d H:i',###})</p>
+			<eq name="info.user" value="$Think.session.id">
+		  <a href="javascript:;" aid="{$info.image_album}" path="{$info.image_path}" onclick="set_cover(this)">设为封面</a><span id="modi_album"> &nbsp;|&nbsp; <a href="javascript:;">修改名称</a></span> &nbsp;|&nbsp; <a href="javascript:;" id="{$info.image_id}" path="{$info.image_path}" aid="{$info.image_album}" name="{$info.image_title}" onclick="del_img(this)">删除图片</a>
+		  </eq>

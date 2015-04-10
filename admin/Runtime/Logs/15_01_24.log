@@ -1,0 +1,10 @@
+[ 2015-01-24T09:53:14+08:00 ] 94.23.156.82 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000710s ]
+
+[ 2015-01-24T19:51:08+08:00 ] 149.154.64.27 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000740s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000837s ]
+

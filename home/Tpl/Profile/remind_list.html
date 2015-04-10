@@ -1,0 +1,11 @@
+      <volist name="remindList" id="remind" empty="你还没有留言">
+      <div class="bubble_area"><a href="{:U('Blog/problog?blog=1&id='.$remind['sender'])}" target="_blank"><img src="{$remind.avatar}" width="48" height="48" title="{$remind.nickname}" class="message_ava"/></a>
+	  <div class="triangle-isosceles left">
+	  <a href="{:U('Blog/problog?blog=1&id='.$remind['sender'])}" target="_blank"><span class="message_name">{$remind.nickname}</span></a>：<span class="apply">{$remind.comment_content}</span><br/>
+        {$remind.comment_time|date='Y-m-d H:i',###} | <a href="javascript:;" orignal_id="{$remind.orignal_id}" reply_name="{$remind.nickname}" reply_url="{:U('Blog/problog?blog=1&id='.$remind['sender'])}" reply_to="{$remind.sender}" onclick="set_reply(this)" class="disagree">回复</a><eq name="_SESSION.id" value="$remind.hid"> | <a href="javascript:;" cid="{$remind.from_id}" id="{$remind.orignal_id}" onclick="delete_comment(this)" class="disagree">删除</a></eq> | <a href="javascript:;" class="disagree">举报</a><br/>
+	  <neq name="_GET.list" value="message">评论来自<eq name="_GET.list" value="comment">博客:<a href="{:U('Blog/page?blog=1&id='.$remind['orignal_id'])}" target="_blank"><else />照片:<a href="{:U('Pic/image?pic=1&id='.$remind['orignal_id'])}" target="_blank"></eq><span class="message_name">《{$remind.title}》</span></a><br/></neq>
+		</div>
+        <div class="clr"></div></div>
+      </volist>
+	  <div class="clr"></div>	  
+	  <p class="pages"><small>&nbsp;&nbsp;&nbsp;</small>{$fpage}</p>

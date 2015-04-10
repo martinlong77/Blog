@@ -1,0 +1,15 @@
+<div id="list">
+		  <volist name="cate_group" id="cg"> 		  
+		  <p><span class="desc">{$cg.name}</span> &nbsp;<a href="javascript:;" onclick="modi_name(this)" name="{$cg.name}" cg_id="{$cg.cg_id}">修改</a> &nbsp;<a href="javascript:;" onclick="del_cg(this)" cg_id="{$cg.cg_id}">删除</a></p>
+		  </volist>
+		  </div>		
+		<span id="error_result" class="result"></span>		       	   
+		  <p><button class="button orange large" id="add_cg">添加</button></p>
+		  
+		  <div id="new_cg" style="display:none;">
+		  <p><span class="category">分组名:</span><input type="text" id="new_name" class="small"/></p>
+		  <input type="button" onclick="create_cg()" class="button white" value="保存"/>
+		  <input type="button" id="cancel_add" class="button black" value="取消" />
+		  </div>
+		  
+<include file="Pub:cg_opera_js" />

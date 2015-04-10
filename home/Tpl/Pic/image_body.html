@@ -1,0 +1,6 @@
+<p><empty name="image.n"><a href="{:U('Pic/image?pic=!&id='.$info['p']['image_id'])}"><img src="{$info.image_path}" alt="{$info.image_title}" /></a><else /><a href="{:U('Pic/image?pic=1&id='.$info['n']['image_id'])}"><img src="{$info.image_path}" alt="{$info.image_title}" /></a></empty></p>
+		   
+		   <div id="new_desc" style="display:none"><p><textarea rows="8" cols="50" id="desc">{$info.image_description}</textarea><p/>
+		   <input type="button" onclick="new_desc()" value="保存" class="button white"/>&nbsp;&nbsp;<input type="button" value="取消" id="close_desc" class="button gray"/></div>
+		   <div id="display_desc"><span class="desc">{$info.image_description}</span> <eq name="info.user" value="$Think.session.id"><a href="javascript:;" id="edit_desc">[编辑描述内容]</a></eq></div>          		  
+		  <p style="text-align:right"><a href="{$info.image_path}" target="_blank">原图</a> &nbsp;|&nbsp; 浏览({$info.readcount})  &nbsp;|&nbsp; <a href="#comment" target="_self">评论</a>({$info.comcount}) &nbsp;|&nbsp; <a href="">举报</a></p>

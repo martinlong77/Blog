@@ -1,0 +1,11 @@
+<span class="check_prompt">您还可以输入<span id="charcount">240</span> 字</span>			
+            <textarea id="message" rows="6" cols="70" onkeyup="check_len()" onkeypress="check_len()"></textarea>
+			<input type="hidden" id="id" value="{$_GET.id}" />
+			<input type="hidden" id="reply_to" />
+			<input type="hidden" id="reply_name" />
+			<input type="hidden" id="reply_url" /><br/>
+            <span id="send_error" class="result"></span><br>
+			 <span class="cate_sel">验证码</span>:
+              <input type="text" id="verify"/></span>&nbsp;
+			<img id="ver_pic" onclick="change_pic()" src="{:U('Pub/verify')}" alt="点击刷新验证码" style="cursor:pointer" /> &nbsp;<a href="javascript:;" onclick="change_pic()" class="comprompt">看不清?换一张</a>
+            <input type="button" value="发表" id="sub_btn" class="button orange  large check_prompt" onclick="send_comment()"/>

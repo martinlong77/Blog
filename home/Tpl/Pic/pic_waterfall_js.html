@@ -1,0 +1,73 @@
+<script type="text/javascript">
+$(function($){
+//瀑布流设置
+ $('#tiles').imagesLoaded(function() {
+  var handler = null;
+  // Prepare layout options.
+  var options = {
+   itemWidth: 210, // Optional, the width of a grid item
+   autoResize: true, // This will auto-update the layout when the browser window is resized.
+   container: $('#main'), // Optional, used for some extra CSS styling
+   offset: 5, // Optional, the distance between grid items
+   flexibleWidth: 310 // Optional, the maximum width of a grid item
+   };
+
+  function applyLayout() {
+    $('#tiles').imagesLoaded(function() {
+    // Destroy the old handler
+    if (handler.wookmarkInstance) {
+      handler.wookmarkInstance.clear();
+    }
+
+    // Create a new layout handler.
+    handler = $('#tiles li');
+    handler.wookmark(options);
+    });
+  }   
+
+  /*
+   * When scrolled all the way to the bottom, add more tiles.
+   */  
+  var loading = $("#loading").data("on", false);//通过给loading这个div增加属性on，来判断执行一次ajax请求   
+  function onScroll(event) {
+    if(loading.data("on")) return;  
+      // Check if we're within 100 pixels of the bottom edge of the broser window.
+      var winHeight = window.innerHeight ? window.innerHeight : $(window).height(); // iphone fix
+      var closeToBottom = ($(window).scrollTop() + winHeight > $(document).height() - 100);
+
+    if (closeToBottom) {
+      // Get the first then items from the grid, clone them, and add them to the bottom of the grid.
+      //在这里将on设为true来阻止继续的ajax请求 
+      loading.data("on", true).fadeIn();                
+      var id = $('#tiles li:last').children('.img_stream').attr('id');
+      var aid = {$_GET.aid};
+      var uid = {$_GET.id};
+      $.get('{:U(\'Pic/moreImg\')}',
+          {id:id,aid:aid,uid:uid},
+          function(data){
+           var img_list = '';  //变量必须声明和初始化,切记！
+           imgList = data.data;  //图片数据
+           total = data.info;  //图片总数            
+           if($.isArray(imgList)){                               
+            for(i=0;i<total;i++){     
+             img_list += '<li><a href="'+ imgList[i]['url'] +'" target="_blank" class="img_stream" aid="'+ aid +'" id="'+ imgList[i]['id'] +'" uid="'+ uid +'" ><img src="'+ imgList[i]['path'] +'" title="'+ imgList[i]['title'] +'" alt="'+ imgList[i]['title'] +'"/><span class="info">'+ imgList[i]['title'] +'</span></a><eq name="_GET.id" value="$_SESSION.id"><br /><a href="javascript:;" aid="'+ aid +'" id="'+ imgList[i]['id'] +'" path="'+ imgList[i]['path'] +'" onclick="set_cover(this)">设为封面</a> &nbsp;|&nbsp; <a href="javascript:;" onclick="move_cg(this)" cg_id="'+ aid +'" pf_id="'+ imgList[i]['id'] +'">转移专辑</a> &nbsp;|&nbsp; <eq name="Think.get.aid" value="2"><a href="javascript:;" onclick="set_avatar(this)" path="'+ imgList[i]['path'] +'">设为头像</a> &nbsp;|&nbsp; </eq><a href="javascript:;" id="'+ imgList[i]['id'] +'" jump="1" path="'+ imgList[i]['path'] +'" onclick="del_img(this)">删除</a></eq></li>';
+            }        
+
+              $('#tiles').append(img_list);
+             
+              applyLayout();  //申请执行一次配置，之前就是少了次配置
+                       
+              loading.data("on", false);   //一次请求完成，将on设为false，可以进行下一次的请求         
+          }  
+        loading.fadeOut();                                        
+      });              
+    }    
+  }
+
+   
+   $(window).bind('scroll', onScroll);  // Capture scroll event.   
+   handler = $('#tiles li');  // Get a reference to your grid items.   
+   handler.wookmark(options); // Call the layout function.
+ });
+});
+</script>

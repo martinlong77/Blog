@@ -1,0 +1,12 @@
+<div class="gadget">
+          <h2>{$album.0.album_name}</h2>           	  
+		  <div class="sb_border"><p><empty name="info.p"><img src="__PUBLIC__/Images/Common/Main/no_cover.gif" alt="没有了" width="200" />没有了<else /><a href="{:U('Pic/image?pic=1&id='.$info['p']['image_id'])}"><img src="{$info.p.image_path}" alt="上一张"/>上一张</a></empty></p></div>
+			<div class="sb_border"><p class="img_side_right"><empty name="info.n"><img src="__PUBLIC__/Images/Common/Main/no_cover.gif" alt="没有了" width="200" />没有了<else /><a href="{:U('Pic/image?pic=1&id='.$info['n']['image_id'])}"><img src="{$info.n.image_path}" alt="下一张"/>下一张</a></empty></p></div>
+			<div class="clr"></div>
+			
+			<p class="spec"><h2>公开专辑</h2></p>
+			<div class="sb_album"><p><a href="{:U('Pic/proPic?pic=1&id='.$info['user'].'&aid='.$album[0]['album_id'])}"><empty name="album.0.album_cover"><img src="__PUBLIC__/Images/Common/Main/no_cover.gif" alt="暂无" /><else /><img src="{$album.0.album_cover}" alt="{$album.0.album_name}" /></empty>{$album.0.album_name}</a></p></div>
+			<div class="sb_album"><p class="img_side_bottom"><a href="{:U('Pic/proPic?pic=1&id='.$info['user'].'&aid='.$album[1]['album_id'])}"><empty name="album.1.album_cover"><img src="__PUBLIC__/Images/Common/Main/no_cover.gif" alt="暂无" width="200" /><else /><img src="{$album.1.album_cover}" alt="{$album.1.album_name}" width="200"/></empty><span class="img_side_font">{$album.1.album_name}</span></a></p></div>
+			<div class="clr"></div>			
+		<a href="{:U('Pic/proPic?image=1&id='.$info['user'])}"><h3 style="float:right;">全部专辑</h3></a>
+		</div>		        

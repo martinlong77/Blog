@@ -1,0 +1,11 @@
+ <h3 class="star"><a href="{:U('Profile/followList?follow=1&id='.$_GET['id'])}">{$info.following}<br />关注</a></h3>	
+          <p class="spec"></p>
+		  <div class="clr"></div>
+          <ul class="ex_menu">
+		  <volist name="followList" id="follow" empty="暂时还没有关注">
+		  <li><a href="{:U('Blog/problog?blog=1&id='.$follow['follow_id'])}" target="_blank"><img src="{$follow.avatar}" width="48" height="48" alt="pix" title="{$follow.nickname}" align="left"/></a>
+<a href="{:U('Blog/problog?blog=1&id='.$follow['follow_id'])}" target="_blank"><span class="rela_name" title="{$follow.nickname}">{$follow.cut_nickname}</span></a><eq name="Think.get.id" value="$Think.session.id"><br /><a href="javascript:;" onClick="unfollow(this)" fid="{$follow.follow_id}"><span class="rela_status" onMouseOver="on_unfollow(this)" onMouseOut="out_unfollow(this)">正在关注</span></a></eq><br />
+ 		  <span class="rela_po">关注:<a href="{:U('Profile/followList?follow=1&id='.$follow['follow_id'])}" target="_blank"><span class="rela_fol">{$follow.following}</span></a> &nbsp;|&nbsp; 粉丝:<a href="{:U('Profile/fansList?about=1&id='.$follow['follow_id'])}" target="_blank"><span class="rela_fans">{$follow.followers}</span></a></span><p></p></li>		  
+		  </volist>		  
+		  <a href="{:U('Profile/followList?follow=1&id='.$_GET['id'])}" target="_blank" style="float:right;"><strong>查看全部&gt;&gt;</strong></a>
+          </ul>

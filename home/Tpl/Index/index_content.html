@@ -1,0 +1,12 @@
+<volist name="postList" id="m"><h2><a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}" target="_blank">{$m.post_title}</a></h2>
+            <div class="clr"></div>
+          <p><span class="date"> 博主: <a href="{:U('Blog/proBlog?blog=1&id='.$m['user'])}">{$m.nickname}</a> &nbsp;</span> &nbsp;|&nbsp; 时间: {$m.post_createtime|date='Y-m-d H:i',###}</p>
+		  <div class="clr"></div>
+		  <p><span class="date">标签: 
+		      <foreach name="m.post_tag" item="sub"><a href="{:U('Pub/search?search='.$sub)}">{$sub}</a>&nbsp;&nbsp; </foreach></span></p>
+          <p>{$m.post_content}</p>
+         <p class="spec"><span>({$m.readcount}) 阅读</span> &nbsp;|&nbsp; <notempty name="Think.session.isLoginIn"><in name="m.post_id" value="$_SESSION.collectId"><a href="javascript:;" onClick="uncol_art(this)" aid="{$m.user}" pid="{$m.post_id}">取消收藏</a><else /> <a href="javascript:;" onClick="col_art(this)" aid="{$m.user}" pid="{$m.post_id}">收藏</a></in> &nbsp;|&nbsp; </notempty><a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}">查看全文 &raquo;</a> <a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}#comment" class="com"><span>{$m.comcount} 评论</span></a></p>
+        </volist>
+		<div class="clr"></div>
+        <p class="pages"><small>&nbsp;&nbsp;&nbsp;</small>{$page}</p>
+		<include file="Blog:blog_common_js" />

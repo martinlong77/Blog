@@ -1,0 +1,9 @@
+<h2>关于我</h2>
+          <div class="clr"></div>
+		  <p><span class="spec" id="profileinfo" >生日:</span> <span class="profileinfo">{$info.birthday}</span></p> 
+		  <p><span class="spec" id="profileinfo">所在地:</span> <span class="profileinfo">{$info.address.0.area_name} {$info.address.1.area_name}</span></p>
+		  <p><span class="spec" id="profileinfo">性别:</span> <span class="profileinfo">{$info.sex}</span></p>		  
+		  <h3>简介</h3>
+          <p>{$info.intro}</p>
+          <eq name="Think.get.id" value="$Think.session.id"><p class="spec"><a href="{:U('profile/editprofile?about=1')}"><strong>编辑个人信息</strong></a></p>
+		  <include file="Profile:pro_opera_js" /></eq>

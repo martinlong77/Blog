@@ -1,0 +1,28 @@
+<li><eq name="info.isFollow" value="0"><a href="javascript:;" id="follow" fid="{$navi.user}"><span class="rela_info">关注Ta</span></a>
+			<a href="javascript:;" id="unfollow" fid="{$navi.user}"><span id="new_fol" style="display:none"><span id="followed" class="rela_info">√已关注</span><span id="unf_btn" class="prompt" style="display:none">取消关注</span></span></a>
+		      <else />
+		      <a href="javascript:;" id="unfollow" fid="{$navi.user}"><span id="new_fol"><span id="followed" class="rela_info">√已关注</span><span id="unf_btn" class="prompt" style="display:none">取消关注</span></span></a>
+			  <a href="javascript:;" id="follow" fid="{$navi.user}" style="display:none"><span class="rela_info">关注Ta</span></a>			  </eq>
+		  </li>
+		  <li><switch name="info.isFriend"> 
+		  <case value="0">		 
+		  <a href="javascript:;" id="add_fri"><span class="rela_info">加好友</span></a>
+		  <span id="wait_app" style="display:none"><span class="info">等待对方验证</span> &nbsp;您可以 <a href="javascript:;" id="un_app" fid="{$navi.user}"><span class="prompt">取消申请</span></a></span>		  
+		  </case>
+		  <case value="-1"><span id="wait_app"><span class="info">等待对方验证</span> &nbsp;您可以 <a href="javascript:;" id="un_app" fid="{$navi.user}"><span class="prompt">取消申请</span></a></span>
+		  <a href="javascript:;" id="add_fri" style="display:none"><span class="rela_info">加好友</span></a>	
+		  </case>
+		  <default />
+		  <span id="now_fri">√<span class="info">朋友</span> &nbsp;<a href="javascript:;" id="break" fid="{$navi.user}"><span class="prompt">解除关系</span></a></span>
+		  <a href="javascript:;" id="add_fri" style="display:none"><span class="rela_info">加好友</span></a>
+		  <span id="wait_app" style="display:none"><span class="info">等待对方验证</span> &nbsp;您可以 <a href="javascript:;" id="un_app" fid="{$navi.user}"><span class="prompt">取消申请</span></a></span>
+		  </switch>
+		  <div id="apply_area" style="display:none;">
+		  <input type="hidden" id="fri_id" value="{$navi.user}" />
+		  <p><span class="prompt">打个招呼吧</span>(15字以内):
+		  <input type="text" id="app_mes" class="small" value="Hi！能交个朋友吗？"/><br/>
+		  <input type="button" value="发送" class="button white" id="send_apply"/>
+		  <input type="button" value="取消" id="cancel" class="button gray" /></p>
+		  </div>
+		  </li>
+		  <include file="Pub:rela_opera_js" />

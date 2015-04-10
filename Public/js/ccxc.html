@@ -1,0 +1,30 @@
+<script type="text/javascript" src="jquery.js"></script>
+<h2>我是H2</h2>
+<select id="self"><option value="1">我曹操凑凹槽</option><option value="2">操凑凹</option></select><input type="checkbox" id="daoluan" name="dl">编辑
+		  <script type="text/javascript">
+$(function($){
+		   //设置私博
+ $('#self').change(function(){
+  var self = $('#self').val();
+  if (self == 1) {
+   $('h2').text('恭喜你点中了');
+   $('input[name=dl]').attr('checked',true);
+   } else {
+   $('h2').text('哈哈，有用吗？');
+   $('input[name=dl]').removeAttr('checked');
+   }
+ });
+ 
+  //设置私博
+ $('#daoluan').click(function(){
+  var self = $('#daoluan').attr('checked');  //不知为什么要checked才行
+  if (self == 'checked') {
+   $('#self').val(2);  //打勾时设为私密
+   $('h2').text('哈哈，有用吗？');
+  } else {
+   $('h2').text('恭喜你点中了');
+   $('#self').val(1);  //取消勾时恢复默认
+  }
+ });
+});
+		  </script>

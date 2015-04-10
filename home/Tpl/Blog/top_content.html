@@ -1,0 +1,10 @@
+<notempty name="top"><div><h2><span style="color:#CC6666">置顶：</span><a href="{:U('Blog/Page?blog=1&id='.$top['post_id'])}" target="_blank">{$top.post_title}</a> <span><notempty name="top.reproduced">转载时间:</notempty>
+		  ({$top.post_createtime|date='Y-m-d H:i',###})</span></h2>
+		    <div class="clr"></div>
+          <p><span class="tag">标签：</span> <foreach name="top.post_tag" item="sub"><a href="{:U('Pub/search?search='.$sub)}">{$sub}</a>&nbsp;&nbsp; </foreach></p>
+          <p>{$top.post_content}</p>
+          <p class="spec"><span>({$top.readcount}) 阅读</span> &nbsp;|&nbsp; <in name="top.post_id" value="$_SESSION.collectId"><a href="javascript:;" onClick="uncol_art(this)" aid="{$_GET.id}" pid="{$top.post_id}">取消收藏</a><else />
+          <a href="javascript:;" onClick="col_art(this)" aid="{$_GET.id}" pid="{$top.post_id}">收藏</a></in> &nbsp;|&nbsp; 
+		  <eq name="Think.get.id" value="$Think.session.id">
+		  <empty name="top.reproduced"><a href="{:U('Blog/editArticle?blog=1&id='.$top['post_id'].'&uid='.$_GET['id'])}">编辑</a> &nbsp;|&nbsp; </empty><a href="javascript:;" onClick="del_art(this)" jump="1" pid="{$top.post_id}" uid="{$_GET.id}" name="{$top.post_title}">删除</a> &nbsp;|&nbsp; <a href="javascript:;" onClick="art_untop()">取消置顶</a> &nbsp;|&nbsp; <a href="javascript:;" onClick="move_cg(this)" id="pf_id_{$top.post_id}" cg_id="{$top.post_category}" pf_id="{$top.post_id}">修改分类</a><else /><a href="{:U('Blog/reproduced?id='.$top['post_id'])}">举报</a></eq>&nbsp;|&nbsp; <a href="{:U('Blog/Page?blog=1&id='.$top['post_id'])}" target="_blank">查看全文&raquo;</a>
+		  <a href="{:U('Blog/Page?blog=1&id='.$top['post_id'])}" class="com" target="_blank"><span>{$top.comcount} 评论</span></a></p></div></notempty>

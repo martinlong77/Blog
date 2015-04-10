@@ -1,0 +1,13 @@
+<h3 class="star"><a href="{:U('Profile/fansList?about=1&id='.$_GET['id'])}">{$info.followers}<br />粉丝</a></h3>
+		  <p class="spec"></p>		  
+          <div class="clr"></div>
+          <ul class="ex_menu">
+          <volist name="fansList" id="fans" empty="还没有粉丝">
+		  <li><a href="{:U('Blog/problog?blog=1&id='.$fans['user'])}" target="_blank"><img src="{$fans.avatar}" width="48" height="48" alt="pix" title="{$fans.nickname}" align="left"/></a>
+		  <a href="{:U('Blog/problog?blog=1&id='.$fans['user'])}" target="_blank"><span class="rela_name">{$fans.cut_nickname}</span></a><eq name="Think.get.id" value="$Think.session.id"><br />
+		  <a href="javascript:;" onClick="move_fans(this)" fid="{$fans.user}"><span class="rela_status">移除粉丝</span></a></eq>
+		  <br />
+		  <span class="rela_po">关注:<a href="{:U('Profile/followList?follow=1&id='.$fans['user'])}" target="_blank"><span class="rela_fol">{$fans.following}</span></a> &nbsp;|&nbsp; 粉丝:<a href="{:U('Profile/fansList?about=1&id='.$fans['user'])}" target="_blank"><span class="rela_fans">{$fans.followers}</span></a></span><p></p></li>
+		  </volist>
+		  <a href="{:U('Profile/fansList?about=1&id='.$_GET['id'])}" target="_blank" style="float:right;"><strong>查看全部&gt;&gt;</strong></a>
+          </ul>

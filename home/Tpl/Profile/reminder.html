@@ -1,0 +1,56 @@
+<include file="Pub:common_head" />
+<link type="text/css" href="__PUBLIC__/css/bubble.css" rel="stylesheet" />
+<title><switch name="_GET.list"><case value="friend">好友请求</case><case value="message">留言</case><case value="comment">博客评论</case><case value="pic_comment">照片评论</case></switch></title>
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    <include file="Pub:navi" />
+    </div>
+<div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+          <eq name="_GET.list" value="friend">		  
+		  <include file="Profile:friapply_remind" />
+		  <else />
+		  <h2><switch name="_GET.list"><case value="friend">好友请求</case><case value="message">留言列表</case><case value="comment">博客评论</case><case value="pic_comment">照片评论</case></switch></h2>
+          <div class="clr"></div>
+		  <include file="Profile:remind_list" />
+		  </eq>
+		  <input type="hidden" id="id" />
+	  <input type="hidden" id="reply_to" />
+	  <input type="hidden" id="reply_name" />
+	  <input type="hidden" id="reply_url" />
+		 </div> 
+		   </div> 
+      <div class="sidebar">
+        <div class="gadget">
+		<ul class="ex_menu">
+           <li><a href="{:U('Profile/reminder?list=comment')}"><eq name="_GET.list" value="comment"><span class="cate_sel"><else />
+           <span class="info"></eq>博客评论</span></a></li>
+		   <p class="spec"></p>
+		   <li><a href="{:U('Profile/reminder?list=pic_comment')}"><eq name="_GET.list" value="pic_comment"><span class="cate_sel"><else />
+           <span class="info"></eq>照片评论</span></a></li>
+		   <p class="spec"></p>
+		   <li><a href="{:U('Profile/reminder?list=message')}"><eq name="_GET.list" value="message"><span class="cate_sel"><else />
+		   <span class="info"></eq>留言</span></a></li>
+		   	<p class="spec"></p>
+		   <li><a href="{:U('Profile/reminder?list=friend')}"><eq name="_GET.list" value="friend"><span class="cate_sel"><else /><span class="info"></eq>好友请求</span></a></li>
+		   <p class="spec"></p>
+          </ul>
+        </div>
+		<include file="Pub:recommend" />
+		</div>
+      <div class="clr"></div>
+    </div></div>
+  </div>	  
+  <include file="Pub:common_foot" />
+  </div>
+</body>
+<eq name="_GET.list" value="friend">
+<include file="Profile:friapply_js" />
+<else />
+<include file="Pub:comment_js" />
+</eq>
+</html>

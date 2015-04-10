@@ -1,0 +1,15 @@
+<div class="header_resize">
+      <div class="logo">
+        <h1><a href="{:U('index/index?hot=1')}">果冻<span>记</span></a> <small><span>写生活</span>享生活</small></h1>
+      </div>
+      <div class="clr"></div>
+      <div class="menu_nav">
+        <ul>
+          <li><a href="{:U('index/index?hot=1')}">返回首页</a></li>
+		  <eq name="_GET.login" value="1"><li class="active"><else /><li></eq><a href="{:U('index/login?login=1')}">登陆果冻</a></li>
+          <eq name="_GET.find" value="1"><li class="active"><else /><li></eq><a href="{:U('index/findpw?find=1')}">找回密码</a></li>
+		  <eq name="_GET.join" value="1"><li class="active"><else /><li></eq><a href="{:U('index/register?join=1')}">加入果冻</a></li>
+        </ul>
+      </div>
+      <div class="clr"></div>
+    </div>

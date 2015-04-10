@@ -1,0 +1,30 @@
+<script type="text/javascript">
+//取消收藏
+function uncol_art(param){
+  if (confirm('确定取消吗?')) {  
+  var pid = $(param).attr('pid');
+  var action = $(param).attr('action');    
+  $.post('{:U(\'Blog/setCollect?action=uncollect\')}',
+        {pid:pid},
+        function(data){
+         if (action == 1) {
+          $(param).parent().parent().hide(500);          
+         } else {
+          var aid = $(param).attr('aid');  
+          $(param).replaceWith('<a href="javascript:;" onclick="col_art(this)" aid="'+ aid +'" pid="'+ pid +'">收藏</a>'); 
+         }            
+  });
+  } 
+}
+ 
+//收藏
+function col_art(param){
+  var pid = $(param).attr('pid');
+  var aid = $(param).attr('aid');  
+  $.post('{:U(\'Blog/setCollect?action=collect\')}',
+        {pid:pid,aid:aid},
+        function(data){        
+        $(param).replaceWith('<a href="javascript:;" onclick="uncol_art(this)" aid="'+ aid +'" pid="'+ pid +'">取消收藏</a>');      
+  });
+}
+</script>

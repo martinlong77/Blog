@@ -1,0 +1,45 @@
+<script type="text/javascript">
+//显示修改框
+function edit_album(info){
+ var name = $('#album_name').attr('name');
+ var aid = $('#album_name').attr('aid');
+ var url = $('#album_name').attr('url');
+ if (name){
+  var ori_ele = '<p class="pt_list_title"><a href="'+ url +'" target="_blank" style="font-size:16px;color:#3366CC">'+ name +'</a>&nbsp; <a href="javascript:;" name="'+ name +'" aid="'+ aid +'" url="'+ url +'" onclick="edit_album(this)">[编辑]</a></p>';
+  $('#modi_album').replaceWith(ori_ele);
+ }
+  
+  var name = $(info).attr('name');
+  var aid = $(info).attr('aid');
+  var url = $(info).attr('url');
+  var content = '<div id="modi_album"><p><span id="edit_result" class="result" style="display:none"></span></p><p><input type="text" id="album_name" name="'+ name +'" aid="'+ aid +'" url="'+ url +'" value="'+ name +'" class="small"/><p/><input type="button" value="保存" class="button white" onclick="submit_name()" /> &nbsp;&nbsp<input type="button" value="取消" class="button black" onclick="edit_close()"></div>';
+   $(info).parent().replaceWith(content);
+} 
+
+//关闭编辑框
+function edit_close(info){
+ var name = $('#album_name').attr('name');
+ var aid = $('#album_name').attr('aid'); 
+ var url = $('#album_name').attr('url');
+ var ori_ele = '<p class="pt_list_title"><a href="'+ url +'" target="_blank" style="font-size:16px;color:#3366CC">'+ name +'</a>&nbsp; <a href="javascript:;" name="'+ name +'" aid="'+ aid +'" url="'+ url +'" onclick="edit_album(this)">[编辑]</a></p>';
+ $('#modi_album').replaceWith(ori_ele);
+}
+     
+//提交修改
+function submit_name(){
+ var name = $('#album_name').val();
+ var aid = $('#album_name').attr('aid'); 
+ var url = $('#album_name').attr('url');
+  $.post('{$operaUrl.edit}',
+  		 {cg_id:aid,name:name},
+         function(data){
+		 if (data.status == 1) {
+		  new_ele = '<p class="pt_list_title"><a href="'+ url +'" target="_blank" style="font-size:16px;color:#3366CC">'+ name +'</a>&nbsp; <a href="javascript:;" name="'+ name +'" aid="'+ aid +'" url="'+ url +'" onclick="edit_album(this)">[编辑]</a></p>';		 
+		  $('#modi_album').replaceWith(new_ele);
+		 } else {
+		  $('#edit_result').html(data.info).show();
+		  setTimeout(function(){ $('#edit_result').hide();},2000);
+		 }
+  });
+ } 
+</script>

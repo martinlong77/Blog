@@ -1,0 +1,39 @@
+<include file="Pub:common_head" />
+<title>{$info.nickname}的粉丝_果冻记</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+          <h2>我的粉丝</h2>
+		  <p class="spec"></p>
+          <div class="clr"></div>
+
+		  <volist name="fansList" id="fans" empty="啊哦，您还没有粉丝哦">
+    	 <p class="relation_list"><a href="{:U('Blog/problog?blog=1&id='.$fans['user'])}" target="_blank"><img src="{$fans.avatar}" width="68" height="68" title="{$follow.nickname}" alt="{$fans.nickname}" /></a><a href="{:U('Blog/problog?blog=1&id='.$fans['user'])}" target="_blank"><span class="detail_name" title="{$fans.nickname}">{$fans.cut_nickname}</span></a><a href="{:U('Profile/followlist?follow=1&id='.$fans['user'])}"><span class="category">关注:{$fans.following}</span></a> &nbsp;|&nbsp; <a href="{:U('Profile/fanslist?id='.$fans['follow_id'])}"><span class="category">粉丝:{$fans.followers}</span></a><br />
+		  <eq name="Think.get.id" value="$Think.session.id"><a href="javascript:;" onClick="move_fans(this)" fid="{$fans.user}"><span class="info">移除粉丝</span></a><br /></eq>
+		  简介:<span class="info" title="{$fans.intro}">{$fans.cut_intro}</span></p>
+			</volist>		       
+          <div class="clr"></div>
+          </div>
+        <p class="pages"><small>&nbsp;&nbsp;&nbsp;</small>{$fpage}</p>		
+      </div>
+      <div class="sidebar">
+	  <include file="Pub:info" />
+		</div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+  <include file="Pub:common_foot" />
+</div>
+<eq name="Think.get.id" value="$Think.session.id">
+<include file="Profile:pro_opera_js" />
+</eq>
+</body>
+</html>

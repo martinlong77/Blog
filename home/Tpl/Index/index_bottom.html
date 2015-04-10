@@ -1,0 +1,12 @@
+<div class="footer">
+    <div class="footer_resize">
+      <p class="lf">Copyright &copy; 2013 <a href="{:U('index/index?hot=1')}">www.Jellong.com</a>, All Rights Reserved</p>
+      <ul class="fmenu">
+          <li><a href="{:U('index/index?hot=1')}">返回首页</a></li>
+		  <eq name="_GET.login" value="1"><li class="active"><else /><li></eq><a href="{:U('index/login?login=1')}">登陆果冻</a></li>
+          <eq name="_GET.find" value="1"><li class="active"><else /><li></eq><a href="{:U('index/findpw?find=1')}">找回密码</a></li>
+		  <eq name="_GET.join" value="1"><li class="active"><else /><li></eq><a href="{:U('index/register?join=1')}">加入果冻</a></li>
+      </ul>
+      <div class="clr"></div>
+    </div>
+  </div>

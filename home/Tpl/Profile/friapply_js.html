@@ -1,0 +1,43 @@
+<script type="text/javascript">
+ function add_friend(param){  //同意并添加好友
+   var fid = $(param).attr('fid');
+   var aid = $(param).attr('app_id');     
+   $.post('{:U(\'profile/rela?set=addFriend\')}',
+      {fid:fid,aid:aid},
+        function(data){
+        if(data.status == 1){
+        var content = '<span class="apply">'+data.info+'</span>';
+        $(param).parent().html(content);
+        setTimeout(function(){ $('#apply_'+aid).hide(500)},1500);
+      } else {
+        alert(data.info);
+      }
+      });
+ }
+ 
+ function refuse_apply(param){  //拒绝申请
+  var aid = $(param).attr('app_id');
+  $.post('{:U(\'Profile/rela?set=refuse\')}',
+      {aid:aid},
+      function(data){
+        if (data.status == 1){
+          $('#apply_'+aid).hide(500);
+        } else {
+          alert(data.info);
+        }
+  });
+ }
+ 
+ function delete_feedback(param){   //删除反馈信息
+  var aid = $(param).attr('app_id');
+  $.post('{:U(\'Profile/rela?set=deleteFeedback\')}',
+      {aid:aid},
+      function(data){
+        if (data.status == 1){
+          $('#apply_'+aid).hide(500);
+        } else {
+          alert(data.info);
+        }
+  });
+ }
+</script>

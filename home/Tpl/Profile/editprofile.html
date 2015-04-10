@@ -1,0 +1,82 @@
+<include file="Pub:common_head" />
+<switch name="_GET.set">
+<case value="avatar">
+<!--编辑头像时调用 -->
+<title>修改个人头像_果冻写</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/jcrop/jquery.Jcrop.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/js/uploadify/uploadify2ava.css" media="all">
+<script type="text/javascript" src="__PUBLIC__/js/jcrop/jquery.Jcrop.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/uploadify/jquery.uploadify.min.js"></script>
+<!--结束调用 -->
+</case>
+
+<case value="pass">
+<!--修改密码时调用 -->
+<title>修改密码_果冻写</title>
+<!--结束调用 -->
+</case>
+
+<default/>
+<!--编辑个人信息时调用 -->
+<title>修改个人信息_果冻写</title>
+<script type="text/javascript" src="__PUBLIC__/js/jquery-ui/jquery.ui.datepicker-zh-CN.js"></script>
+<!--结束调用 -->
+</switch>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+          <div class="clr"></div>
+		  <switch name="_GET.set">
+		  <case value="avatar">
+		  <include file="Profile:edit_avatar" />
+<!-- 修改头像 -->
+		  </case>
+		  <case value="pass">
+		  <include file="Profile:edit_pass" />
+		  <!-- 修改密码 -->
+		  </case>
+		  <default/>
+		  <include file="Profile:edit_info" />
+		   <!-- 修改个人信息 -->
+		  </switch>
+		</div>
+		</div>
+      <div class="sidebar">
+        <div class="gadget">
+          <h2 class="star">个人设置</h2>
+          <div class="clr"></div>
+          <ul class="sb_menu">
+		  <li><a href="{:U('Profile/editprofile')}"><span class="info">基本资料</span></a></li>	
+		  <li><a href="{:U('Profile/editprofile?set=avatar')}"><span class="info">修改头像</span></a></li>
+		  <li><a href="{:U('Profile/editprofile?set=pass')}"><span class="info">修改密码</span></a></li>	  			
+		  </ul>
+        </div>
+        </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+  <div id="edit_result" title="操作进程">	
+	</div>
+   <include file="Pub:common_foot" /></div>
+   </body>
+   <switch name="_GET.set">
+		  <case value="avatar">
+		  <include file="Profile:edit_avatar_js" />
+<!-- 修改头像 -->
+		  </case>
+		  <case value="pass">
+		  <include file="Profile:edit_pass_js" />
+		  <!-- 修改密码 -->
+		  </case>
+		  <default/>
+		  <include file="Profile:edit_info_js" />
+		   <!-- 修改个人信息 -->
+		  </switch>
+</html>

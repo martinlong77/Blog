@@ -1,0 +1,21 @@
+<div class="clr"></div>		
+          <h2>评论</h2>		  
+          <div class="clr"></div>		  
+          <div class="comment">
+		  <div id="comment_list">		  
+		  <include file="Pub:comment_content" />		  
+		  </div>
+		  <br />		  
+          <h2 id="comment">留言</h2>
+          <div class="clr"></div>
+		  <empty name="info.comment_status">
+		  <neq name="_SESSION.isLoginIn" value="1">		  
+		 <span class="apply">请登录后回复</span>	
+		 <else /> 
+		 <include file="Pub:comment_form" />
+            <div class="clr"></div>	
+			<include file="Pub:comment_js" />	  
+		   </neq>
+		 <else />
+		  <font color="#0000FF">评论暂不开放</font>
+		  </empty>

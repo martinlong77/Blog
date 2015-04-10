@@ -1,0 +1,35 @@
+<include file="Pub:common_head" />
+<title>文章编辑_果冻写</title>
+<script type="text/javascript" src="__PUBLIC__/js/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize3">
+      <div class="mainbar1">
+        <div class="article">
+		<div class="con_img">
+		  <p><span class="retitle">文章标题：</span><input type="text" id="title" value="{$article.post_title}" class="big"/> 
+		  <span class="lastEdit">最后修改：<empty name="article.post_modify_time">未修改<else />{$article.post_modify_time|date='Y-m-d H:i',###}</empty></span></p>	  
+		  <textarea id="content">{$article.post_content}</textarea><br />
+		  <script type="text/javascript">CKEDITOR.replace('content');</script>
+		  <span class="retitle">文章分类：</span>  
+		  <select id="cid"><volist name="category" id="c"><eq name="c.category_id" value="$article.post_category"><option value="{$c.category_id}" selected>{$c.category_name}</option><else /><option value="{$c.category_id}">{$c.category_name}</option></eq></volist></select>&nbsp; <include file="Pub:cg_dialog_opera" />
+		  <p><span class="retitle">标签</span>（多个标签请用空格隔开）：<input type="text" id="tag" class="big" name="tag" value="{$article.post_tag}" /> <input type="button" value="自动获取" class="button orange" id="get_keyword" /></p>
+		  <span class="retitle">文章设置：</span><eq name="article.comment_status" value="0"><input type="radio" name="comment" value="0" checked/>允许评论 <input type="radio" name="comment" value="1"/>不允许评论<else /><input type="radio" name="comment" value="0"/>允许评论 <input type="radio" name="comment" value="1" checked/>不允许评论</eq><p></p>
+		  <span class="editPost"><eq name="article.post_category" value="2"><input  type="checkbox" id="self" value="1" checked /> <else /><input type="checkbox" id="self" value="1"/></eq>文章仅限自己可见 <empty name="article.post_status"><input type="checkbox" id="status" value="1"/> <else /><input type="checkbox" id="status" value="1" checked/></empty>禁止转载</span><br/><input type="button" value="确认修改" onClick="postBlog()" class="button orange large" style="margin-left:5%"/> &nbsp;&nbsp; <a href="{:U('Blog/page?blog=1&id='.$_GET['id'])}"><input type="button" value="返回" class="button gray large"></a></p>
+		  </div>		  
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Pub:common_foot" />
+</div>
+</body>
+<include file="Blog:edit_js" />
+</html>

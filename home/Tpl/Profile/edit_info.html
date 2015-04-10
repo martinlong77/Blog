@@ -1,0 +1,20 @@
+		  <p><label for="disname" id="profileinfo">昵称：</label><input type="text" id="disname" value="{$_SESSION.nickname}" class="small" style="margin-left:18px" /></p>
+		  <p><label for="email" id="profileinfo">Email：</label><input type="text" id="email" value="{$_SESSION.email}" class="small" style="margin-left:10px" /></p>
+		  <p><label id="profileinfo" for="birth">生日：</label> <input type="text" value="{$_SESSION.birthday}" id="birth" readonly style="margin-left:16px" /></p>
+		 <p><label for="province" id="profileinfo">所在地：</label><select name="province" id="province" onChange="loadArea(this.value,'city')">
+        <volist name="province" id="prov">
+            <eq name="prov.area_id" value="$_SESSION.location.0"><option value="{$prov.area_id}" selected>{$prov.area_name}</option><else /><option value="{$prov.area_id}" >{$prov.area_name}</option></eq>
+        </volist>
+    </select>
+           
+    <select name="city" id="city">
+		<volist name="city" id="ci">
+        <eq name="ci.area_id" value="$_SESSION.location.1"><option value="{$ci.area_id}" selected>{$ci.area_name}</option><else /><option value="{$ci.area_id}">{$ci.area_name}</option></eq>
+		</volist>
+    </select></p>
+		 <p><label for="sex" id="profileinfo">性别：<eq name="_SESSION.sex" value="男"><input type="radio" name="sex" value="男" checked="checked" style="margin-left:20px" />男 <input type="radio" name="sex" value="女"/>女<else /><input type="radio" name="sex" value="男" style="margin-left:20px" />男 <input type="radio" name="sex" value="女" checked="checked"/>女</eq></label> <eq name="_SESSION.secret" value="1"><input type="checkbox" id="secret" value="1" style="margin-left:30px;" checked/><else /><input type="checkbox" id="secret" value="1" style="margin-left:30px;" /></eq>
+		 显示为保密</p>
+		  <label for="intro" id="profileinfo">简介：</label>	  
+          <p><textarea id="intro" cols="85" rows="5" onkeyup="intro_max()" onkeypress="intro_max()">{$_SESSION.intro}</textarea></p>
+		  (30字以内)<button id="submit" class="button orange bigrounded check_prompt" />保存</button>
+		  <span class="result"></span>

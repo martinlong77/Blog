@@ -1,0 +1,7 @@
+		<volist name="result" id="rt" empty="没有记录">
+		<h3><a href="{:U('Blog/Page?id='.$rt['post_id'])}" target="_blank">{$rt.post_title}</a> <span class="rela_info">({$rt.post_createtime|date='Y-m-d H:i',###})</span></h3>
+		    <div class="clr"></div>
+          <p>{$rt.post_content}...</p>
+		   <p class="spec"></p>
+		</volist>
+		<p class="pages" id="page"><small>{$page}</small></p>

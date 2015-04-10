@@ -1,0 +1,8 @@
+<p><span class="login_title">账号：</span><input type="text" class="small" id="login_name"/></p>
+<p><span class="login_title">密码：</span><input type="password" class="small" id="login_pword"/></p>
+<input type="button" value="登陆果冻" class="button orange bigrounded" id="dialog_login" />
+			<a href="{:U('index/findpw?find=1')}" class="btn btn-inverse" style="margin-left:10px;">忘记密码?</a><br/>
+		    <a href="{:U('Index/register?join=1')}" style="float:right">还没有账号?立刻加入果冻！</a></p>
+		<span id="login_dialog_error" class="result"></span>
+		<div id="login_success" title="登陆成功！"></div>
+		<include file="Pub:login_dialog_js" />

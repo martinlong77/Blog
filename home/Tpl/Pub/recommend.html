@@ -1,0 +1,11 @@
+<div class="gadget">
+          <h2 class="star">推荐博文</h2>
+          <div class="clr"></div>
+          <ul class="ex_menu">
+            <volist name="recommend" id="re">
+           <li><a href="{:U('Blog/page?blog=1&id='.$re[post_id])}" target="_blank"><span class="retitle">{$re.post_title}</span></a><br />
+              <span class="resynopsis">{$re.post_synopsis}...</span></li>
+			  <p class="spec"></p>
+			</volist>
+          </ul>
+        </div>

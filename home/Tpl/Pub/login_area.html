@@ -1,0 +1,10 @@
+          	<p><a href="{:U('Index/register?join=1')}" style="float:right"><span class="login_title">加入果冻!</span></a></p><br/>
+			<li><span class="login_title">账号:</span>
+		    <input type="text" class="small" id="uname"/></li>
+		  <li><span class="login_title">密码:</span>
+		    <input type="password" class="small" id="pword"/></li>
+		  <li><input type="button" value="登陆果冻" class="button orange bigrounded" id="login"/>
+		    <a href="{:U('index/findpw?find=1')}" style="margin-left:10px;"><span class="login_title">忘记密码?</span></a></p>		    
+			<div id="login_error" class="result"></div>
+			</li>
+<include file="Pub:login_js" />

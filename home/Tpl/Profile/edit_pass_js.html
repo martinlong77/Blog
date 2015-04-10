@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  $(function($){
+  //改密
+ $('#pass').submit(function(){
+  $.post('{:U(\'profile/editInfo?edit=pass\')}',
+         {old_pword:$('#old_pword').val(),pword:$('#new_pword').val(),repword:$('#new_repword').val()},
+		function(data){
+          if (data.status != 1){
+  	       $('.result').html(data.info).show();
+		   setTimeout(function(){ $('.result').hide()},2000);
+		  } else {
+		   $.ThinkBox.success(data.info,{'delayClose':1000});
+		   setTimeout(function(){location.href = data.data},2000);
+		  }
+  });
+ });
+});
+		  </script>

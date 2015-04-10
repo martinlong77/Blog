@@ -1,0 +1,53 @@
+<!--上传图片-->
+<script type="text/javascript">
+		$('#file_upload').uploadify({
+			'swf'      : '__PUBLIC__/js/uploadify/uploadify.swf',
+			'uploader' : '<!--{:U(\'Content/upload_cover\')}-->',
+			'auto'     : false,//关闭自动上传
+			//'uploadLimit' : 1,
+			'fileSizeLimit' : '1MB',			
+			'buttonText' : '选择图片',
+			'fileTypeExts'	: '*.jpg; *.png; *.gif; *.jpeg;',
+			'onSelectError' : function(file, errorCode, errorMsg) { this.queueData.errorMsg = '文件类型错误，或是您的图片超过大小限制。'},
+			'onUploadSuccess' : function(file, data, response) { 
+				//$('#uploadsuccess').html(data).show();				
+				img = jQuery.parseJSON(data);
+				$('#a_cover').attr('src',img['dis_path']);
+				$('#save_path').val(img['save_path']); 
+				$('#uploadsuccess').show();
+				$('#upload_area').hide();
+				$("#delete_it").show();				  
+			}
+		});
+		
+	//上传	
+    $("#upload_now").click(function(){
+	  $('#file_upload').uploadify('upload');	  
+	});
+	
+	//取消
+	$("#re_choose").click(function(){
+	  $('#file_upload').uploadify('cancel');
+	});
+	
+	//删除
+	$('#delete_it').click(function(){
+	 if(confirm('确定删除吗？')){
+	  var path = $('#save_path').val();
+	  var id = $('#a_aid').val();
+	  url = "<!--{:U('Content/delete_cover?type='.$_GET['type'].'')}-->";
+	  $.post(url,{path:path,id:id},function(data){
+	    if(data.status == 1){
+			$('#uploadsuccess').hide();
+	  	  	$("#upload_area").show();
+		  	$("#delete_it").hide();
+			$('#file_upload').uploadify('cancel');
+			$('#a_cover').removeAttr('src');
+			$('#save_path').val('');
+		} else {
+			$.messager.alert('操作失败',data.info,'error');
+		}
+	  });
+	 }
+    });		
+</script>

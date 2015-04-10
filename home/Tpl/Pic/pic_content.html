@@ -1,0 +1,17 @@
+<div id="main" role="main">
+		<ul id="tiles">
+		   <volist name="imageList" id="i" empty="这个专辑还没有图片">
+		   <li id="id_{$i.image_id}"><a href="{:U('pic/image?pic=1&id='.$i['image_id'])}" target="_blank" class="img_stream" aid="{$_GET.aid}" id="{$i.image_id}" uid="{$_GET.id}" ><img src="{$i.image_path}" title="{$i.image_title}" alt="{$i.image_title}"/><span class="info">{$i.image_title}</span></a>
+		   <eq name="Think.get.id" value="$Think.session.id"><br /><a href="javascript:;" aid="{$_GET.aid}" id="{$i.image_id}" path="{$i.image_path}" onclick="set_cover(this)">设为封面</a> &nbsp;|&nbsp; <a href="javascript:;" onclick="move_cg(this)" cg_id="{$i.image_album}" pf_id="{$i.image_id}">转移专辑</a> &nbsp;|&nbsp; <eq name="Think.get.aid" value="2"><a href="javascript:;" onclick="set_avatar(this)" path="{$i.image_path}">设为头像</a> &nbsp;|&nbsp; </eq><a href="javascript:;" id="{$i.image_id}" aid="{$_GET.aid}" path="{$i.image_path}" onclick="del_img(this)" name="{$i.image_title}">删除图片</a></eq></li>
+		  </volist>
+		  </ul>	
+		  </div>	
+		  <include file="Pic:pic_waterfall_js" />
+		  <eq name="Think.get.id" value="$Think.session.id">		  		  	  
+		 <include file="Pic:pic_operate_js" />
+		 </eq>		 
+		 <div class="clr"></div>
+		 <div id="loading" class="loading-wrap">
+    	  <span class="loading">加载中,请稍候...</span>
+ 		   </div>	
+		  			 

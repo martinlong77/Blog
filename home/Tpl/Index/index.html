@@ -1,0 +1,38 @@
+<include file="Pub:common_head" />
+<title>果冻写_欢迎来到果冻写</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+   <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+		<h3>测试账号:<span>admin1</span>——<span>admin3</span>,密码和账号<span>相同</span></h3>
+         <include file="Index:index_content" /> 
+		</div>
+      </div>
+      <div class="sidebar">
+	  <empty name="Think.session.isLoginIn">
+        <div class="gadget">
+          <div class="clr"></div>
+		  <ul class="sb_menu">
+		  <include file="Pub:login_area" />
+		  </ul>
+		  </div>
+		  <else />
+		  <include file="Pub:info" />
+		  </empty>
+        
+        <include file="Pub:recommend" />
+		</div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Pub:common_foot" />
+</div>
+</body>
+</html>

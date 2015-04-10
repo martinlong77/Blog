@@ -1,0 +1,32 @@
+<include file="Pub:common_head" />
+<title>果冻记_找回密码</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Index:index_navi" /> 
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">       
+            <div class="clr"></div>			
+		<h2 class="star">请输入您的果冻账号</h2>
+		  <p><span class="info">果冻账号:</span>
+		    <input type="text" id="uname" class="mid" /></p>
+			<p><span class="profileinfo">请输入验证码</span>(<span class="comprompt">看不清楚点击验证码刷新</span>):
+              <input type="text" id="verify" size="6"/></span>
+			<img id="ver_pic" src="{:U('Pub/verify')}" style="cursor:pointer" /></p>
+		  <p><input type="button" value="提交" id="sub_form" class="button orange"/></p>
+		  <span class="result" style="display:none;"></span>
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Index:index_bottom" />
+</div>
+<include file="Index:index_opera_js" />
+</body>
+</html>

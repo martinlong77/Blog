@@ -1,0 +1,34 @@
+<script type="text/javascript">
+$(function($){
+ $('#login').click(function(){	//登陆
+  $.post('{:U(\'Index/loginin\')}',
+        {uname:$('#uname').val(),pword:$('#pword').val()},
+      	function(data){
+	 	 if (data.status == 1){
+	 	  <eq name="_GET.login" value="1">
+	 	  //判断是否登陆页面登陆	
+	 	  var content = '<a href="'+data.data+'" id="href"><span class="cate_sel">登陆成功！页面将在 <b id="wait_time">2</b> 秒后跳转，如不想等待请点击此处。</span></a>';
+	 	  $('.article').html(content);
+	 	  $('.menu_nav').html(' ');
+	 	  $('.fmenu').html(' ');
+	 	  var wait = document.getElementById('wait_time');
+		  var interval = setInterval(function(){			
+		   var time = --wait.innerHTML;
+		   if(time <= 0) {
+		   	location.href = data.data;
+			clearInterval(interval);
+		   }
+		  },1000);
+	 	  <else />
+	 	  var prompt = '<a href="javascript:location.reload();" id="href">页面将在 <b id="wait_time">2</b>秒后跳转，如不想等待请点击此处。</a>';						
+	 	  $('#login_success').html(prompt);
+	 	  $('#login_success').dialog('open');	
+	 	  </eq>		  		  
+	 	 } else {
+	 	  $('#login_error').text(data.info).show();
+		  setTimeout(function(){ $('#login_error').hide()},2000);
+	     }
+   });
+ });
+});
+</script>

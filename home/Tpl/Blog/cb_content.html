@@ -1,0 +1,9 @@
+<h2>收藏的博客</h2>
+          <volist name="postList" id="m">
+		  <div><span class="tag">标题：</span><a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}"><span class="rela_info">{$m.post_title}</span></a>
+		  <span class="tag">作者：<a href="{:U('Blog/proBlog?blog=1&&id='.$m['post_author'])}">{$m.nickname}</a> &nbsp;</span>
+          <p class="spec"><a href="javascript:;" onclick="uncol_art(this)" action="1"  pid="{$m.post_id}">删除收藏</a> &nbsp;|&nbsp; <span>({$m.readcount}) 阅读</span> <a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}" class="com"><span>{$m.comcount} 评论</span></a></p></div>
+        </volist>
+        <div class="clr"></div>
+        <p class="pages" id="fpage"><small>&nbsp;&nbsp;&nbsp;</small>{$page}</p>
+		

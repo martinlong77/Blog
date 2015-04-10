@@ -1,0 +1,33 @@
+<include file="Pub:common_head" />
+<title>新博客_果冻写</title>
+<script type="text/javascript" src="__PUBLIC__/js/ckeditor/ckeditor.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize3">
+      <div class="mainbar1">
+        <div class="article">
+		  <p><span class="retitle">文章标题：</span> <input type="text" id="title" name="title" class="big"/></p>	  
+		  <textarea id="content" name="content"></textarea><br />
+		  <script type="text/javascript">CKEDITOR.replace('content');</script><br />
+		  <span class="retitle">文章分类：</span>		  
+		  <select id="cid"><volist name="category" id="c"><eq name="c.category_id" value="0"><option value="{$c.category_id}" selected>{$c.category_name}</option><else /><option value="{$c.category_id}">{$c.category_name}</option></eq></volist></select>&nbsp; <include file="Pub:cg_dialog_opera" />
+		  <p><span class="retitle">标签</span>（多个标签请用空格隔开）：<input type="text" id="tag" class="big" name="tag" /> <input type="button" value="自动获取" class="button orange bigrounded" id="get_keyword" /></p>
+		  <span class="result" style="display:none"></span>
+		  <span class="retitle">文章设置：</span><input type="radio" name="comment" value="0" checked/>允许评论 <input type="radio" name="comment" value="1"/>不允许评论<p></p>
+		  <span class="editPost"><input type="checkbox" id="self" value="1"/>文章仅限自己可见 <input type="checkbox" id="status" name="status" value="1"/>禁止转载</span><br /><input type="button" value="发博客" class="button orange large" style="margin-left:15%" onClick="postBlog()"/></p> 
+        </div>
+      </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Pub:common_foot" />
+</div> 
+</body>
+<include file="Blog:edit_js" />
+</html>

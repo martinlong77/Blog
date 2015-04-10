@@ -1,0 +1,8 @@
+
+          <volist name="postList" id="m"><h3><a href="{:U('Blog/proBlog?blog=1&id='.$m['follow_id'])}"><img src="{$m.avatar}" width="40" height="40" /> {$m.nickname}</a> <span class="rela_info"><notempty name="m.reproduced">转载时间：</notempty>({$m.post_createtime|date='Y-m-d H:i',###})</span>: </h3>
+		    <p class="spec"><a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}"><span class="category">{$m.post_title}</span></a> &nbsp;|&nbsp; ({$m.readcount}) 阅读 &nbsp;|&nbsp; <in name="m.post_id" value="$_SESSION.collectId"><a href="javascript:;" onClick="uncol_art(this)" aid="{$m.user}" pid="{$m.post_id}">取消收藏</a><else /> <a href="javascript:;" onClick="col_art(this)" aid="{$m.user}" pid="{$m.post_id}">收藏</a></in>
+            
+		 <a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}" class="com"><span>{$m.comcount} 评论</span></a></p>
+        </volist>
+		<div class="clr"></div>
+        <p class="pages" id="fpage"><small>&nbsp;&nbsp;&nbsp;</small>{$page}</p>	

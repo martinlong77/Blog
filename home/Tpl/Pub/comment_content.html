@@ -1,0 +1,13 @@
+	  <volist name="commentList" id="c">	
+		  <div>	  
+		  <eq name="c.uid" value="$Think.session.id"><img src="{$c.user_avatar}" width="48" height="48" alt="user" class="userpic" />
+           <p>我
+		  <else />
+            <a href="{:U('Blog/proBlog?blog=1&id='.$c['uid'])}"><img src="{$c.user_avatar}" width="48" height="48" alt="user" class="userpic" /></a>
+            <p><a href="{:U('Blog/proBlog?blog=1&id='.$c['uid'])}">{$c.user_nickname}</a></eq> 
+		  ({$c.comment_time|date='Y-m-d H:i',###}) 说： <neq name="c.uid" value="$Think.session.id"><a href="javascript:;" onclick="set_reply(this)" reply_to="{$c.uid}" reply_name="{$c.user_nickname}" reply_url="{:U('Blog/proBlog?blog=1&id='.$c['uid'])}">[回复]</a>&nbsp;<a href="">[举报]</a></neq>&nbsp;<eq name="c.uid" value="$Think.session.id"><a href="javascript:;" onclick="delete_comment(this)" cid="{$c.comment_id}" id="{$_GET.id}">[删除]</a><else /><eq name="c.hid" value="$Think.session.id"><a href="javascript:;" onclick="del_com(this)" cid="{$c.comment_id}" id="{$_GET.id}">[删除]</a></eq></eq><br />
+            </p>
+            <p>{$c.comment_content}</p>
+			</div>
+			</volist>			
+			<p class="pages" id="fpage"><small>{$page}</small></p>			

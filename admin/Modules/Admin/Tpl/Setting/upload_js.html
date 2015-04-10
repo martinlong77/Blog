@@ -1,0 +1,94 @@
+<!--上传图片-->
+<script type="text/javascript">
+	//if(typeof($('#index_img1').uploadify()) != 'undefined') $('#index_img1').uploadify('destroy');
+	$('#index_img1').uploadify({
+			'swf'      : '__PUBLIC__/js/uploadify/uploadify.swf',
+			'uploader' : '<!--{:U(\'Content/upload_cover\')}-->',
+			'auto'     : false,//关闭自动上传
+			//'uploadLimit' : 1,
+			'fileSizeLimit' : '1MB',			
+			'buttonText' : '选择图片',
+			'fileTypeExts'	: '*.jpg; *.png; *.gif; *.jpeg;',
+			'onSelectError' : function(file, errorCode, errorMsg) { this.queueData.errorMsg = '文件类型错误，或是您的图片超过大小限制。'},
+			'onUploadSuccess' : function(file, data, response) { 
+				//$('#uploadsuccess').html(data).show();				
+				img = jQuery.parseJSON(data);
+				$('#img1').attr('src',img['dis_path']);
+				$('#img1_path').val(img['save_path']); 
+				$('#img1_uploadsuccess').show();
+				$('#img1_area').hide();
+				$("#img1_delete").show();				  
+			}
+	});
+
+	//上传	
+    $("#img1_upload").click(function(){
+	  $('#index_img1').uploadify('upload');	  
+	});
+	
+	//取消
+	$("#img1_re_choose").click(function(){
+	  $('#index_img1').uploadify('cancel');
+	});
+	
+	$('#index_img2').uploadify({
+			'swf'      : '__PUBLIC__/js/uploadify/uploadify.swf',
+			'uploader' : '<!--{:U(\'Content/upload_cover\')}-->',
+			'auto'     : false,//关闭自动上传
+			//'uploadLimit' : 1,
+			'fileSizeLimit' : '1MB',			
+			'buttonText' : '选择图片',
+			'fileTypeExts'	: '*.jpg; *.png; *.gif; *.jpeg;',
+			'onSelectError' : function(file, errorCode, errorMsg) { this.queueData.errorMsg = '文件类型错误，或是您的图片超过大小限制。'},
+			'onUploadSuccess' : function(file, data, response) { 
+				//$('#uploadsuccess').html(data).show();				
+				img = jQuery.parseJSON(data);
+				$('#img2').attr('src',img['dis_path']);
+				$('#img2_path').val(img['save_path']); 
+				$('#img2_uploadsuccess').show();
+				$('#img2_area').hide();
+				$("#img2_delete").show();				  
+			}
+	});
+		
+	//上传	
+    $("#img2_upload").click(function(){
+	  $('#index_img2').uploadify('upload');	  
+	});
+	
+	//取消
+	$("#img2_re_choose").click(function(){
+	  $('#index_img2').uploadify('cancel');
+	});
+	
+//删除
+function delete_it(param){
+	 if(confirm('确定删除吗？')){
+	  img = $(param).attr('type');
+	  img == 'img1' ? path = $('#img1_path').val() : path = $('#img2_path').val();
+	  	  
+	  url = "<!--{:U('Setting/delete_img')}-->";
+	  $.post(url,{path:path,img:img},function(data){
+	    if(data.status == 1){
+		  if(img == 'img1'){
+			$('#img1_uploadsuccess').hide();
+	  	  	$("#img1_area").show();
+		  	$("#img1_delete").hide();
+			$('#index_img1').uploadify('cancel');
+			$('#img1').attr('src','');
+			$('#img1_path').val('');
+		  } else {
+		  	$('#img2_uploadsuccess').hide();
+	  	  	$("#img2_area").show();
+		  	$("#img2_delete").hide();
+			$('#index_img2').uploadify('cancel');
+			$('#img2').attr('src','');
+			$('#img2_path').val('');
+		  }	
+		} else {
+			$.messager.alert('操作失败',data.info,'error');
+		}
+	  });
+	 }
+}		
+</script>

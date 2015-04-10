@@ -1,0 +1,37 @@
+<include file="Pub:common_head" />
+<title>果冻记_登陆果冻</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+  <include file="Index:index_navi" />  
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">       
+            <div class="clr"></div>			
+		<h2 class="star">欢迎来到果冻记！</h2>
+		<p><span class="login_title">账号:</span>
+		    <input type="text" id="uname" class="small" /></p>
+		 <p><span class="login_title">密码:</span> 
+		    <input type="password" id="pword" class="small" /></p>
+		  <p><input type="button" id="login" value="登陆" class="button orange"/>		  
+		  <a href="{:U('index/findpw?find=1')}" style="margin-left:10px;"><span class="login_title">忘记密码？</span></a> </p>
+		  <div id="login_error" class="result"></div>
+		</div>
+		</div>
+		<div class="sidebar">	 
+	  <div class="gadget">
+		<a href="{:U('Index/register?join=1')}"><span class="login_title">加入果冻!</span></a>
+		</div>
+      </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Index:index_bottom" />
+</div>
+</body>
+<include file="Pub:login_js" />
+</html>

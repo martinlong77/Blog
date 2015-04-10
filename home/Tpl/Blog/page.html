@@ -1,0 +1,34 @@
+<include file="Pub:common_head" />
+<title>{$info.post_title}_来自{$info.nickname}的文章_果冻写</title>
+<meta http-equiv="description" content="{$info.post_synopsis}" />
+<meta http-equiv="keywords" content="<foreach name="info.post_tag" item="tag">{$tag},</foreach>" />
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+		<div class="con_img">
+          <include file="Blog:page_content" />	
+		</div>
+		<include file="Pub:comment" />
+		  </div>
+        </div>
+      </div>
+      <div class="sidebar">
+	  	<include file="Pub:info" />
+        <include file="Pub:recommend" />
+      </div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Pub:common_foot" />
+</div>
+</body>
+<include file="Blog:blog_common_js" />
+</html>

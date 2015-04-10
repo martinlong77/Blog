@@ -1,0 +1,48 @@
+<div class="easyui-panel" data-options="fit:true,title:'<!--{$currentpos}-->',border:false">
+<script type="text/javascript">
+$(function(){	
+	$('#kw_sub').click(function(){	//提交修改	
+	  name = $('#kw_name').val();
+	  pinyin = $('#kw_pinyin').val();
+	  id = $('#kw_id').val();
+	  pid = $('#kw_pid').val();
+  
+	  $.post("<!--{:U('Setting/keyword_operate')}-->",{name:name,pinyin:pinyin,id:id,parent_id:pid},function(data){
+		  if(data.status == 1){
+		    $.messager.alert('操作成功',data.info,'info',function(){
+			edit = $('#pagetabs').tabs('exists','修改条件');
+			add = $('#pagetabs').tabs('exists','设置新条件');   	
+			if(edit) $('#pagetabs').tabs('close', '修改条件');	//如果存在则关闭该页		
+			if(add) $('#pagetabs').tabs('close', '设置新条件');
+			openUrl(data.data,'搜索条件设置',0);   
+		   });
+		  } else {
+		   $.messager.alert('操作失败',data.info,'error'); 
+		  }
+	  });	
+	});	
+});
+
+</script>
+<form id="operat_edit" style="font-size:13px">
+<table cellspacing="10">
+	<tr>
+		<td width="90">关键字：</td>
+        <td><input id="kw_name" type="text" style="width:180px;height:22px" value="<!--{$keyword.name}-->" /></td>
+	</tr>
+	<tr>
+		<td>拼音缩写：</td>
+		<td><input id="kw_pinyin" type="text" value="<!--{$keyword.pinyin}-->" style="width:180px;height:22px" /></td>
+	</tr>
+	<tr>
+		<td>所属分类：</td>
+		<td><select id="kw_pid" style="width:180px;height:22px"><volist name="parent_list" id="p"><eq name="p.id" value="$keyword.parent_id"><option value="<!--{$p.id}-->" selected><!--{$p.name}--></option><else /><option value="<!--{$p.id}-->"><!--{$p.name}--></option></eq></volist></select></td>
+	</tr>
+	
+	<input type="hidden" id="kw_id" value="<!--{$keyword.id}-->" />
+	<tr>
+		<td colspan="3"><a id="kw_sub" class="easyui-linkbutton">发表</a></td>
+	</tr>
+</table>
+</form>
+</div>

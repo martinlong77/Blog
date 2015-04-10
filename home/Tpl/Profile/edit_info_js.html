@@ -1,0 +1,67 @@
+<script type="text/javascript">
+$(function($){ 
+ $('#submit').click(function(){   //提交修改
+  name = $('#disname').val();
+  email = $('#email').val();
+  birth = $('#birth').val();
+  sex = $('input[name=sex]:checked').val();
+  intro = $('#intro').val();
+   
+  if ( $('#secret:checked').val() == 1) {
+   secret = 1;
+  } else {
+   secret = 0;
+  }
+  
+  $.post('{:U(\'profile/editInfo?edit=info&uid=\'.$_SESSION['id'])}',
+         {disname:name,email:email,birth:birth,sex:sex,intro:intro,secret:secret,location:$('#province').val() +' '+ $('#city').val()},
+		 function(data){
+		  if (data.status != 1){
+  	    $('.result').text(data.info).show();
+		    setTimeout(function(){ $('.result').hide()},2000);
+		  } else {
+        $('#edit_result').text(data.info);
+		    $('#edit_result').dialog('open');
+		    setTimeout('location.reload()',1000);
+		  }
+  });
+ });
+
+ //Jquery ui日期控件调用
+ $("#birth").datepicker({
+  changeMonth: true,
+  changeYear: true,
+  yearRange: '1950:2012'
+ });
+ 
+ //编辑结果对话框
+ $('#edit_result').dialog({
+  autoOpen: false,
+  resizable: false,
+  modal: true,
+  open: function(event,ui){		
+	setTimeout(function(){ $('#edit_result').dialog('close')},2000);
+  }
+ });
+});
+
+//AJAX获取数据,areaId是所在地的area_id,areaType是传递的类型
+function loadArea(areaId,areaType) {
+    $.post('{:U(\'profile/getArea\')}',{'areaId':areaId},function(data){
+	       $('#'+areaType).empty();
+		   $.each(data,function(no,items){
+                $('#'+areaType).append('<option value="'+items.area_id+'">'+items.area_name+'</option>');
+            });
+    });
+}
+
+function intro_max() {  //检查回复长度
+  input_len = $('#intro').val().length;
+  input_len = 30-input_len;
+  if (input_len < 0) {
+    str = $('#intro').val();
+    content = str.substr(0,30);
+    $('#intro').val(content);
+  }
+}
+</script>

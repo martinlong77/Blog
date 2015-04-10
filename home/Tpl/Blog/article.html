@@ -1,0 +1,16 @@
+		<volist name="postList" id="m">
+		  <div id="id_{$m.post_id}"><h2><a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}" target="_blank">{$m.post_title}</a> <span><notempty name="m.reproduced">转载时间：</notempty>
+		    ({$m.post_createtime|date='Y-m-d H:i',###})</span></h2>
+		  <div class="clr"></div>
+          <p><span class="tag">标签：</span> <foreach name="m.post_tag" item="sub"><a href="{:U('Pub/search?search='.$sub)}">{$sub}</a>&nbsp;&nbsp; </foreach></p>
+          <p>{$m.post_content}</p>
+          <p class="spec"><span>({$m.readcount}) 阅读</span> &nbsp;|&nbsp; <eq name="Think.session.isLoginIn" value="1"><in name="m.post_id" value="$_SESSION.collectId"><a href="javascript:;" onClick="uncol_art(this)" aid="{$_GET.id}" pid="{$m.post_id}">取消收藏</a><else /> <a href="javascript:;" onClick="col_art(this)" aid="{$_GET.id}" pid="{$m.post_id}">收藏</a></in> &nbsp;|&nbsp; 
+		  <eq name="Think.get.id" value="$Think.session.id">
+		  <empty name="m.reproduced"><a href="{:U('Blog/editArticle?blog=1&id='.$m['post_id'])}">编辑</a> &nbsp;|&nbsp; <a href="javascript:;" onClick="art_top(this)" pid="{$m.post_id}">置顶</a> &nbsp;|&nbsp; <a href="javascript:;"  onclick="move_cg(this)" id="pf_id_{$m.post_id}" cg_id="{$m.post_category}" pf_id="{$m.post_id}">修改分类</a> &nbsp;|&nbsp;</empty>
+		  <a href="javascript:;" onClick="del_art(this)" pid="{$m.post_id}" uid="{$_GET.id}" name="{$m.post_title}">删除</a>
+		  <else />
+		  <a href="{:U('Blog/reproduced?id='.$m['post_id'])}">举报</a></eq> &nbsp;|&nbsp; </eq><a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}" target="_blank">查看全文&raquo;</a>
+		  <a href="{:U('Blog/Page?blog=1&id='.$m['post_id'])}" target="_blank" class="com"><span>{$m.comcount} 评论</span></a></p></div>
+		</volist>
+          <div class="clr"></div>
+        <p class="pages" id="page"><small>&nbsp;&nbsp;&nbsp;</small>{$page}</p>		

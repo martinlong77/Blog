@@ -1,0 +1,40 @@
+<include file="Pub:common_head" />
+<title>{$Think.get.search} 的搜索结果_果冻写</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize">
+	<div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+		<h3>关于 <span>{$Think.get.search}</span> 共找到 <span>{$total.result}</span> 条相关记录，耗时 <span>{$total.time}</span> 秒。</h3>
+		 <div id="ajax_content">
+		  <include file="content" />
+		 </div>
+		</div>
+      </div>
+      <div class="sidebar">
+        <div class="gadget">
+          <h2 class="star">推荐博文</h2>
+          <div class="clr"></div>
+          <ul class="ex_menu">
+            <volist name="recommend" id="re">
+           <li><a href="{:U('Blog/page?blog=1&id='.$re[post_id])}" target="_blank"><span class="retitle">{$re.post_title}</span></a><br />
+              <span class="resynopsis">{$re.post_synopsis}</span></li>
+			  <p class="spec"></p>
+			</volist>
+          </ul>
+        </div>
+		</div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+<include file="Pub:common_foot" />
+</div>
+</body>
+</html>

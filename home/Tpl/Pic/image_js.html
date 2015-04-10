@@ -1,0 +1,64 @@
+<script type="text/javascript">
+$(function($){
+ //显示名称修改框
+ $('#modi_album').click(function(){
+  $('#modi_album').hide();
+  $('.title').hide();
+  $('#new_name').show();
+ });
+ 
+ //关闭名称修改框
+ $('#close_name').click(function(){
+  $('#modi_album').show();
+  $('.title').show();
+  $('#new_name').hide();
+ });
+  
+  //显示描述修改框
+ $('#edit_desc').click(function(){
+  $('#display_desc').hide();
+  $('#new_desc').show();
+ });
+ 
+ //关闭描述修改框
+  $('#close_desc').click(function(){
+  $('#display_desc').show();
+  $('#new_desc').hide();
+ });
+});
+
+ //修改名称
+ function new_name(){
+  var id = $('#img_id').val();
+  var name = $('#img_name').val();
+  $.post('{:U(\'Pic/edit?set=name\')}',
+         {id:id,name:name},
+         function(data){
+		  if (data.status == 1) {
+  		   $('.title').text(name).show();
+  		   $('#modi_album').show();
+   		   $('#new_name').hide();
+		  } else {
+		   $('#name_error').text(data.info).show();
+		   setTimeout(function(){ $('#name_error').hide()},2000);
+		  }
+  });
+ }
+ 
+ //修改描述
+ function new_desc(){
+  var id = $('#img_id').val();
+  var desc = $('#desc').val();
+  $.post('{:U(\'Pic/edit?set=desc\')}',
+         {id:id,desc:desc},
+         function(data){
+		  if (data.status == 1){
+  		   $('.desc').text(desc);
+  		   $('#display_desc').show();
+  		   $('#new_desc').hide();
+		  } else {
+		   alert(data.info);
+		  }
+  });
+ }
+</script>

@@ -1,0 +1,57 @@
+<include file="Pub:common_head" />
+<include file="Pub:cg_head" />
+<title>{$info.nickname}的好友_果冻记</title>
+</head>
+<body>
+<div class="main">
+  <div class="header">
+    <include file="Pub:navi" />
+  </div>
+
+  <div class="content">
+    <div class="content_resize"><div class="content_resize2">
+      <div class="mainbar">
+        <div class="article">
+          <h2>好友列表</h2>
+		  <p class="spec"></p>
+          <div class="clr"></div>
+		  <volist name="friendList" id="friend" empty="您还没有好友">
+    	  <p class="relation_list" id="id_{$friend.friend_id}"><a href="{:U('Blog/problog?blog=1&id='.$friend['friend_id'])}" target="_blank"><img src="{$friend.avatar}" width="68" height="68" title="{$friend.nickname}" alt="{$friend.nickname}" /></a><a href="{:U('Blog/problog?blog=1&id='.$friend['friend_id'])}" target="_blank"><span class="detail_name" title="{$friend.nickname}">{$friend.cut_nickname}</span></a><a href="{:U('Profile/followlist?follow=1&id='.$friend['friend_id'])}"><span class="category">关注:{$friend.following}</span></a> &nbsp;|&nbsp; <a href="{:U('Profile/fanslist?id='.$friend['friend_id'])}"><span class="category">粉丝:{$friend.followers}</span></a><br />
+		  <eq name="Think.get.id" value="$Think.session.id"><a href="javascript:;" onClick="move_cg(this)" pf_id="{$friend.friend_id}" cg_id="{$friend.group_id}"><span class="cate_sel">设置分组</span></a> &nbsp;|&nbsp; <a href="javascript:;" onClick="on_break(this)" fid="{$friend.friend_id}"><span class="info" onMouseMove="on_friend(this)" onMouseOut="out_friend(this)">我的好友</span></a><br /></eq>
+		  简介:<span class="info" title="{$friend.intro}">{$friend.cut_intro}</span>    	  </li>
+		  </volist> 		       
+        <div class="clr"></div>
+        </div>
+        <p class="pages"><small>&nbsp;&nbsp;&nbsp;</small>{$fpage}</p>		
+      </div>
+      <div class="sidebar">
+          <include file="Pub:info" />
+		<eq name="Think.get.id" value="$Think.session.id">
+        <div class="gadget">
+          <h2>关注分组</h2>
+          <div class="clr"></div>
+          <ul class="ex_menu" id="friend_list">
+		  <volist name="cate_group" id="cg" empty="您还没有分组">
+		  <eq name="Think.get.gid" value="$cg.cg_id">
+		  <li id="cg_id_{$_GET.gid}"><a href="{:U('Profile/friendList?about=1&id='.$_GET['id'])}"><span class="apply">{$cg.name}</span></a></li>
+		  <else />
+		  <li id="cg_id_{$cg.cg_id}"><a href="{:U('Profile/friendList?about=1&id='.$_GET['id'].'&gid='.$cg['cg_id'])}"><span class="agree">{$cg.name}</span></a></li></eq>
+		  <span class="spec"></span>			  
+		  </volist>
+		  </ul>
+		 <p></p>
+		  <include file="Pub:cg_dialog_opera" />
+		  <include file="Profile:pro_opera_js" />	
+		  </div>	
+		</eq>
+		</div>
+      <div class="clr"></div>
+    </div></div>
+  </div>
+  <include file="Pub:common_foot" />
+</div>
+<neq name="Think.get.id" value="$Think.session.id">
+<include file="Pub:rela_opera_js" />
+</neq>
+</body>
+</html>

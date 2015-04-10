@@ -1,0 +1,70 @@
+<div id="delete_confirm" title="删除确认">
+删除后不可恢复,确定要删除 <span id="del_name"></span> 吗？
+<input type="hidden" id="pid"> 
+</div>  
+<script type="text/javascript">
+$(function($){   
+  //删除确认
+ $('#delete_confirm').dialog({  
+  autoOpen: false,
+  resizable: false,
+  modal: true,
+  draggable: false,
+ });
+});
+//删除文章
+function del_art(param){	
+  var pid = $(param).attr('pid');//文章ID
+  var uid = $(param).attr('uid'); //作者ID，用于验证	 
+  var name = $(param).attr('name'); //文章名称
+  var jump = '{$navi.jump}';
+  var url = '{:U(\'Blog/deleteArticle\')}';
+  $('#pid').val(pid);
+
+  $('#del_name').text(name);  
+  $('#delete_confirm').dialog('option','buttons',
+    {'确定':function(){ 
+        $.post(url,//TP模板在这里解析有问题，所有URL在上面赋值
+          {pid:pid,uid:uid},
+          function(data){
+         if (data.status == 1) {
+          if (jump == 1) {
+           $('#id_'+pid).hide(500);
+          } else {
+           location.href = data.data;
+          }  
+         } else {
+          alert(data.info);
+         }
+       }); 
+        $(this).dialog('close');
+      },
+      '取消':function(){ $(this).dialog('close')}
+    });
+  $('#delete_confirm').dialog('open');
+}
+
+//置顶
+function art_top(param){
+ var pid = $(param).attr('pid');
+ var re = $(param).attr('re');
+ $.post('{:U(\'Blog/setTop?set=top\')}',
+  	{pid:pid},
+        function(data){
+		$('#move_result').text(data.info);
+		$('#move_result').dialog('open');
+		setTimeout(function(){location.reload()},1000);		
+ });
+}
+ 
+//取消置顶
+function art_untop(){
+ $.post('{:U(\'Blog/setTop?set=untop\')}',
+       function(data){
+		$('#move_result').text(data.info);
+		$('#move_result').dialog('open');
+		setTimeout(function(){location.reload()},1000);	
+ });
+}
+</script>
+

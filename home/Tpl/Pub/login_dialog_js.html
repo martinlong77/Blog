@@ -1,0 +1,61 @@
+<script type="text/javascript">
+$(function($){	//登录框方法
+ $('#login_dialog').dialog({
+	autoOpen: false,
+	resizable: false,
+	modal: true,
+	draggable: false
+ });
+		
+ //打开对话框		
+ $('#open_login_dialog').click(function() {
+  $('#login_dialog').dialog('open');
+ });
+
+ //登陆成功显示
+ $('#login_success').dialog({
+	autoOpen: false,
+	resizable: false,
+	modal: true,
+	draggable: false,
+	close: function(event,ui) {location.href = $('#href').attr('href')},
+	open: function(event,ui){				
+		//var wait = document.getElementById('wait_time');
+		var interval = setInterval(function(){
+			var wait = $('#wait_time').text();			
+			var time = --wait;
+			$('#wait_time').text(time);
+			//var time = --wait.innerHTML;	//就是这个地方dialog和jq有关的地方老是不能刷新
+			if(time <= 0) {
+			<eq name="_GET.join" value="1">
+			location.href = $('#href').attr('href'); //注册页登陆跳转
+			<else />	
+			 location.reload();		//不是注册页登陆直接刷新
+			</eq>
+			 clearInterval(interval);
+			}
+		},1000);						
+	}
+ });
+ 
+ $('#dialog_login').click(function(){	//登陆
+  $.post('{:U(\'Index/loginin\')}',
+        {uname:$('#login_name').val(),pword:$('#login_pword').val()},
+      	function(data){
+	 	 if (data.status == 1){
+	 	 <eq name="_GET.join" value="1">
+	 	  var prompt = '<a href="'+data.data+'" id="href">页面将在 <b id="wait_time">2</b>秒后跳转，如不想等待请点击此处。</a>'; //不是注册页登陆则刷新	 	 
+	 	 <else />
+	 	  var prompt = '<a href="javascript:location.reload();" id="href">页面将在 <b id="wait_time">2</b>秒后跳转，如不想等待请点击此处。</a>';//注册页登陆则跳转	 	  	 	  
+	 	 </eq>		
+	 	  $('#login_success').html(prompt);
+	 	  $('#login_dialog').dialog('close');
+		  $('#login_success').dialog('open');		  
+	 	 } else {
+	 	  $('#login_dialog_error').html(data.info).show();
+		  setTimeout(function(){ $('#login_dialog_error').hide()},2000);	
+	     }
+   });
+ });
+}); 
+</script>

@@ -1,0 +1,1478 @@
+[ 2015-01-15T10:51:38+08:00 ] 61.135.190.201 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001678s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000990s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000893s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028542s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028668s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000443s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000437s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000566s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002026s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000744s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2015-01-15T10:55:28+08:00 ] 61.135.190.72 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000968s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001648s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001305s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008803s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000444s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000435s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000326s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001933s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000733s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000805s ]
+
+[ 2015-01-15T15:50:16+08:00 ] 171.107.24.74 /admin.php/admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001307s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001584s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001324s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011965s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000644s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000649s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000511s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002946s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001005s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001110s ]
+
+[ 2015-01-15T15:50:21+08:00 ] 171.107.24.74 /admin.php/admin/index/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000913s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001274s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001723s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.001228s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.001188s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.002004s ]
+NOTIC: 建议使用I方法替代_get
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019477s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019614s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000461s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000457s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001999s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000758s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000830s ]
+
+[ 2015-01-15T15:50:24+08:00 ] 171.107.24.74 /admin.php/admin/index/login/dosubmit/1.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000913s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001022s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000635s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000904s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000747s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000602s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000679s ]
+NOTIC: 建议使用I方法替代_get
+NOTIC: 建议使用I方法替代_post
+NOTIC: 建议使用I方法替代_post
+SQL: SELECT * FROM `tutor_times` WHERE ( `username` = 'ajjadmin' ) AND ( `isadmin` = 1 ) LIMIT 1   [ RunTime:0.000945s ]
+SQL: SELECT * FROM `tutor_admin` WHERE ( `username` = 'ajjadmin' ) LIMIT 1   [ RunTime:0.000648s ]
+SQL: DELETE FROM `tutor_times` WHERE ( `username` = 'ajjadmin' ) [ RunTime:0.000162s ]
+SQL: UPDATE `tutor_admin` SET `lastloginip`='171.107.24.74',`lastlogintime`=1421308224,`lastlifetime`=1421308224 WHERE ( `userid` = 2 ) [ RunTime:0.000225s ]
+
+[ 2015-01-15T15:50:25+08:00 ] 171.107.24.74 /admin.php/admin/index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001298s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001457s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000919s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001362s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000910s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000915s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001003s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000931s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421308225 WHERE ( `userid` = 2 ) [ RunTime:0.000331s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000896s ]
+SQL: SELECT `lastlogintime`,`lastloginip` FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant lastlogintime - assumed 'lastlogintime' /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/5bd0925e25bf58793df33dc58ca05648.php 第 62 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019153s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000513s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000501s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000385s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000597s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002224s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000791s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000872s ]
+
+[ 2015-01-15T15:50:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_main.html?_=1421308098958
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.011427s ]
+INFO: [ route_check ] --END-- [ RunTime:0.011557s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001306s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001069s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001095s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000998s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000075s ]
+SQL: SELECT * FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000347s ]
+NOTIC: [8] Undefined index:  act /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 4 行.
+NOTIC: [2] file() [<a href='function.file'>function.file</a>]: open_basedir restriction in effect. File(/proc/cpuinfo) is not within the allowed path(s): (/home/aijiajia:/usr/lib/php:/usr/php4/lib/php:/usr/local/lib/php:/usr/local/php4/lib/php:/tmp) /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 111 行.
+NOTIC: [2] file(/proc/cpuinfo) [<a href='function.file'>function.file</a>]: failed to open stream: Operation not permitted /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 111 行.
+NOTIC: [8] Undefined index:  memUsed /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  memFree /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  memPercent /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  memCached /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  memRealPercent /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  memCachedPercent /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  swapTotal /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  swapUsed /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  swapFree /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [8] Undefined index:  swapPercent /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 23 行.
+NOTIC: [2] file() [<a href='function.file'>function.file</a>]: open_basedir restriction in effect. File(/proc/net/dev) is not within the allowed path(s): (/home/aijiajia:/usr/lib/php:/usr/php4/lib/php:/usr/local/lib/php:/usr/local/php4/lib/php:/tmp) /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 31 行.
+NOTIC: [2] file(/proc/net/dev) [<a href='function.file'>function.file</a>]: failed to open stream: Operation not permitted /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 31 行.
+NOTIC: [8] Undefined index:  memBuffers /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 51 行.
+NOTIC: [8] Undefined index:  memRealUsed /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 56 行.
+NOTIC: [8] Undefined index:  memRealFree /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 57 行.
+NOTIC: [8] Undefined offset:  2 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 80 行.
+NOTIC: [8] Undefined offset:  3 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 81 行.
+NOTIC: [8] Undefined offset:  4 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 82 行.
+NOTIC: [8] Undefined offset:  5 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 83 行.
+NOTIC: [8] Undefined offset:  6 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 84 行.
+NOTIC: [8] Undefined offset:  7 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 85 行.
+NOTIC: [8] Undefined offset:  8 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 86 行.
+NOTIC: [8] Undefined offset:  9 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 87 行.
+NOTIC: [8] Undefined offset:  10 /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 88 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 89 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 90 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 91 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 92 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 93 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 94 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 95 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 96 行.
+NOTIC: [8] Undefined variable: NetInput /home/aijiajia/public_html/Admin/Common/Func/Sys.func.php 第 97 行.
+NOTIC: [2] php_uname() has been disabled for security reasons /home/aijiajia/public_html/Admin/Modules/Admin/Action/IndexAction.class.php 第 133 行.
+SQL: SELECT `username`,`realname` FROM `tutor_admin` WHERE ( `lastlifetime` >= 1421307926 ) ORDER BY lastlifetime desc  [ RunTime:0.000277s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index:  win_n /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/220ec2782dec500245ec2a33f4bc4089.php 第 48 行.
+NOTIC: [2] php_uname() has been disabled for security reasons /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/220ec2782dec500245ec2a33f4bc4089.php 第 48 行.
+NOTIC: [8] Undefined index:  2 /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/220ec2782dec500245ec2a33f4bc4089.php 第 49 行.
+NOTIC: [8] Undefined index:  1 /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/220ec2782dec500245ec2a33f4bc4089.php 第 53 行.
+NOTIC: [8] Use of undefined constant SITE_DIR - assumed 'SITE_DIR' /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/220ec2782dec500245ec2a33f4bc4089.php 第 56 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036197s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036285s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000442s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000460s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000514s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001971s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000708s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2015-01-15T15:50:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_menuLeft.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000865s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001040s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000793s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000700s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 1 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000304s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 6 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000306s ]
+
+[ 2015-01-15T15:50:27+08:00 ] 171.107.24.74 /admin.php/admin/index/public_main/act/phpinfo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001430s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001606s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.024860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.024977s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001284s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001063s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000873s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000969s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000097s ]
+SQL: SELECT * FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000094s ]
+
+[ 2015-01-15T15:50:27+08:00 ] 171.107.24.74 /admin.php/admin/index/public_main/act/phpinfo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001312s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001471s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000649s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000604s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000594s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000689s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000074s ]
+SQL: SELECT * FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000072s ]
+
+[ 2015-01-15T15:50:27+08:00 ] 171.107.24.74 /admin.php/admin/index/public_main/act/phpinfo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001020s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000755s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001055s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000858s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000654s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001120s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000077s ]
+SQL: SELECT * FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000072s ]
+
+[ 2015-01-15T15:50:27+08:00 ] 171.107.24.74 /admin.php/admin/index/public_main/act/phpinfo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000962s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001127s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000642s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000729s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000624s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000699s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000087s ]
+SQL: SELECT * FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000087s ]
+
+[ 2015-01-15T15:50:31+08:00 ] 171.107.24.74 /admin.php/admin/index/public_menuLeft.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000869s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000840s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000634s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000619s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000653s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 3 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000321s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 21 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000376s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 29 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000239s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 39 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000219s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 17 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000248s ]
+
+[ 2015-01-15T15:50:33+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098959
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000872s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001421s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001127s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001359s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.001213s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001705s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001495s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000457s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000253s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026705s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000662s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000744s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000487s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000768s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002945s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001027s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001137s ]
+
+[ 2015-01-15T15:50:33+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098960
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000851s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000957s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000673s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000935s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001070s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001092s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000076s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000067s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000066s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011472s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000455s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000428s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000310s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001888s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000715s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000781s ]
+
+[ 2015-01-15T15:50:34+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000854s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000952s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001130s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.000983s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000641s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000960s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000242s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000174s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000353s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000082s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000062s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000060s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000166s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 12 ) LIMIT 1   [ RunTime:0.000393s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 8 ) LIMIT 1   [ RunTime:0.000218s ]
+
+[ 2015-01-15T15:50:35+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001304s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001443s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001295s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001033s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001008s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000849s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001384s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001107s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000076s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000073s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000071s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000071s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000067s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000070s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000071s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000069s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000072s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000063s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 12 ) LIMIT 1   [ RunTime:0.000063s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 8 ) LIMIT 1   [ RunTime:0.000064s ]
+
+[ 2015-01-15T15:53:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000966s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001152s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000639s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000719s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000909s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001514s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000946s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000917s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001002s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421308406 WHERE ( `userid` = 2 ) [ RunTime:0.000210s ]
+
+[ 2015-01-15T15:55:17+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate/type/article.html?_=1421308098961
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000975s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000733s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001268s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001357s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.001222s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.001182s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001568s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.001003s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001511s ]
+NOTIC: [8] Undefined index:  content /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 41 行.
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000332s ]
+SQL: SELECT * FROM `tutor_article` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000334s ]
+SQL: SELECT * FROM `tutor_type` ORDER BY number DESC  [ RunTime:0.000640s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028258s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028369s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000670s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000649s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000481s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000852s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002925s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000993s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001093s ]
+
+[ 2015-01-15T15:55:31+08:00 ] 171.107.24.74 /admin.php/admin/index/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001472s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000668s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000749s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000756s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000810s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000677s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000671s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000769s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421308531 WHERE ( `userid` = 2 ) [ RunTime:0.000195s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000367s ]
+SQL: SELECT `lastlogintime`,`lastloginip` FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000210s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant lastlogintime - assumed 'lastlogintime' /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/5bd0925e25bf58793df33dc58ca05648.php 第 62 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013081s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013175s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000447s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000459s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000534s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002037s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000693s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000766s ]
+
+[ 2015-01-15T15:56:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000972s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001309s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000678s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001078s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000960s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421308586 WHERE ( `userid` = 2 ) [ RunTime:0.000328s ]
+
+[ 2015-01-15T15:59:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001304s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001442s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000913s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001631s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001311s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001383s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.001149s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.001530s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000946s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421308766 WHERE ( `userid` = 2 ) [ RunTime:0.000175s ]
+
+[ 2015-01-15T16:01:42+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000965s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001317s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001026s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001262s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.001143s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.001100s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001426s ]
+NOTIC: [2] Missing argument 3 for img_match(), called in /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php on line 44 and defined /home/aijiajia/public_html/Admin/Common/common.php 第 37 行.
+NOTIC: [8] Undefined variable: num /home/aijiajia/public_html/Admin/Common/common.php 第 40 行.
+NOTIC: [8] Undefined offset:  0 /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 46 行.
+NOTIC: [8] Undefined index:  cover /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 54 行.
+SQL: INSERT INTO `tutor_official` (`title`,`content`,`cover`,`type`,`atype`,`akind`,`time`) VALUES ('如何帮助孩子选早期阅读教材？','<p>&nbsp; &nbsp; 对于处在语言发展关键期的小班孩子来说，阅读是生活，阅读是游戏，更是学习。那么小班孩子开展早期阅读到底该选择什么样的内容？选好内容后又该如何解读教材，设计活动？<br/></p><p><br/></p><p>&nbsp; &nbsp; 一、思考的问题：如何选择小班孩子早期阅读的教材？</p><p><br/></p><p>&nbsp; &nbsp; 1、鲜明的视觉形像：孩子喜欢鲜明的色彩和形象，对于抽象的、混沌的画面，因无法理解而不感兴趣。线条的变化和形状的构成，应有明确的关联，因为他们的感觉是敏锐的。</p><p><br/></p><p>&nbsp; &nbsp; 2、象征的、典型的形态：孩子们喜爱以象征的、典型的形式来表现的图画。</p><p><br/></p><p>&nbsp; &nbsp; 3、融合在画中的想象力：画面内容要有符合孩子心理的想象，想象愈丰富、愈贴近孩子生活的愈受欢迎。</p><p><br/></p><p>&nbsp; &nbsp; 4、故事情节清晰：故事的情节应清晰，故事角色不宜过多，情节简单明了，便于孩子体会和理解。要符合儿童的生活经验，能帮助儿童扩展理解力、想象力、思考力。</p><p><br/></p><p>&nbsp; &nbsp; 5、故事语言必须有自然的、美妙的韵律，便于孩子模仿，从而进行情感交流及表现表达。</p><p><br/></p><p>&nbsp; &nbsp; 二、对小班早期阅读教材的理解</p><p><br/></p><p>&nbsp; &nbsp; 1、赏读型</p><p><br/></p><p>&nbsp; &nbsp; 赏读型的图画书一般故事性不太强。这一类图书阅读重在反复，欣赏语言的神韵与声韵，培养良好的语感，同时，此类绘本的图画往往也用抒情优美细腻的笔触，美得令人心醉，所以还要多引导孩子静静地欣赏画面。</p><p><br/></p><p>&nbsp; &nbsp; 2、表演型</p><p><br/></p><p>&nbsp; &nbsp; 有一定故事情节，人物形象鲜明，起码有两人或以上的对话，适合让孩子进行表演型的阅读。如：《小黄鸡和小黑鸡》等等。</p><p><br/></p><p>&nbsp; &nbsp; 3、想象型</p><p><br/></p><p>&nbsp; &nbsp; 想象是阅读的一个特质，想象也是阅读的重要方法。但是在小班选择这类图画书作为教材似乎有些难度，脱离了生活经验，小班孩子的想象力毕竟有限。</p><p><br/></p><p>&nbsp; &nbsp; 4、综合型</p><p><br/></p><p>&nbsp; &nbsp; 在实际的教学中，有的图画书往往融合了以上多种类型，有赏读，有表演，有想象，可以选取一个重点，融合其他要点，在多法融合中培养孩子的综合素养。</p><p><br/></p>',null,2,2,1,1421308902) [ RunTime:0.000261s ]
+ERR: 1048:Column 'cover' cannot be null
+ [ SQL语句 ] : INSERT INTO `tutor_official` (`title`,`content`,`cover`,`type`,`atype`,`akind`,`time`) VALUES ('如何帮助孩子选早期阅读教材？','<p>&nbsp; &nbsp; 对于处在语言发展关键期的小班孩子来说，阅读是生活，阅读是游戏，更是学习。那么小班孩子开展早期阅读到底该选择什么样的内容？选好内容后又该如何解读教材，设计活动？<br/></p><p><br/></p><p>&nbsp; &nbsp; 一、思考的问题：如何选择小班孩子早期阅读的教材？</p><p><br/></p><p>&nbsp; &nbsp; 1、鲜明的视觉形像：孩子喜欢鲜明的色彩和形象，对于抽象的、混沌的画面，因无法理解而不感兴趣。线条的变化和形状的构成，应有明确的关联，因为他们的感觉是敏锐的。</p><p><br/></p><p>&nbsp; &nbsp; 2、象征的、典型的形态：孩子们喜爱以象征的、典型的形式来表现的图画。</p><p><br/></p><p>&nbsp; &nbsp; 3、融合在画中的想象力：画面内容要有符合孩子心理的想象，想象愈丰富、愈贴近孩子生活的愈受欢迎。</p><p><br/></p><p>&nbsp; &nbsp; 4、故事情节清晰：故事的情节应清晰，故事角色不宜过多，情节简单明了，便于孩子体会和理解。要符合儿童的生活经验，能帮助儿童扩展理解力、想象力、思考力。</p><p><br/></p><p>&nbsp; &nbsp; 5、故事语言必须有自然的、美妙的韵律，便于孩子模仿，从而进行情感交流及表现表达。</p><p><br/></p><p>&nbsp; &nbsp; 二、对小班早期阅读教材的理解</p><p><br/></p><p>&nbsp; &nbsp; 1、赏读型</p><p><br/></p><p>&nbsp; &nbsp; 赏读型的图画书一般故事性不太强。这一类图书阅读重在反复，欣赏语言的神韵与声韵，培养良好的语感，同时，此类绘本的图画往往也用抒情优美细腻的笔触，美得令人心醉，所以还要多引导孩子静静地欣赏画面。</p><p><br/></p><p>&nbsp; &nbsp; 2、表演型</p><p><br/></p><p>&nbsp; &nbsp; 有一定故事情节，人物形象鲜明，起码有两人或以上的对话，适合让孩子进行表演型的阅读。如：《小黄鸡和小黑鸡》等等。</p><p><br/></p><p>&nbsp; &nbsp; 3、想象型</p><p><br/></p><p>&nbsp; &nbsp; 想象是阅读的一个特质，想象也是阅读的重要方法。但是在小班选择这类图画书作为教材似乎有些难度，脱离了生活经验，小班孩子的想象力毕竟有限。</p><p><br/></p><p>&nbsp; &nbsp; 4、综合型</p><p><br/></p><p>&nbsp; &nbsp; 在实际的教学中，有的图画书往往融合了以上多种类型，有赏读，有表演，有想象，可以选取一个重点，融合其他要点，在多法融合中培养孩子的综合素养。</p><p><br/></p>',null,2,2,1,1421308902)
+SQL: INSERT INTO `tutor_article` (`title`,`type`,`content`,`keywords`,`description`,`createtime`) VALUES ('如何帮助孩子选早期阅读教材？',3,'<p>&nbsp; &nbsp; 对于处在语言发展关键期的小班孩子来说，阅读是生活，阅读是游戏，更是学习。那么小班孩子开展早期阅读到底该选择什么样的内容？选好内容后又该如何解读教材，设计活动？<br/></p><p><br/></p><p>&nbsp; &nbsp; 一、思考的问题：如何选择小班孩子早期阅读的教材？</p><p><br/></p><p>&nbsp; &nbsp; 1、鲜明的视觉形像：孩子喜欢鲜明的色彩和形象，对于抽象的、混沌的画面，因无法理解而不感兴趣。线条的变化和形状的构成，应有明确的关联，因为他们的感觉是敏锐的。</p><p><br/></p><p>&nbsp; &nbsp; 2、象征的、典型的形态：孩子们喜爱以象征的、典型的形式来表现的图画。</p><p><br/></p><p>&nbsp; &nbsp; 3、融合在画中的想象力：画面内容要有符合孩子心理的想象，想象愈丰富、愈贴近孩子生活的愈受欢迎。</p><p><br/></p><p>&nbsp; &nbsp; 4、故事情节清晰：故事的情节应清晰，故事角色不宜过多，情节简单明了，便于孩子体会和理解。要符合儿童的生活经验，能帮助儿童扩展理解力、想象力、思考力。</p><p><br/></p><p>&nbsp; &nbsp; 5、故事语言必须有自然的、美妙的韵律，便于孩子模仿，从而进行情感交流及表现表达。</p><p><br/></p><p>&nbsp; &nbsp; 二、对小班早期阅读教材的理解</p><p><br/></p><p>&nbsp; &nbsp; 1、赏读型</p><p><br/></p><p>&nbsp; &nbsp; 赏读型的图画书一般故事性不太强。这一类图书阅读重在反复，欣赏语言的神韵与声韵，培养良好的语感，同时，此类绘本的图画往往也用抒情优美细腻的笔触，美得令人心醉，所以还要多引导孩子静静地欣赏画面。</p><p><br/></p><p>&nbsp; &nbsp; 2、表演型</p><p><br/></p><p>&nbsp; &nbsp; 有一定故事情节，人物形象鲜明，起码有两人或以上的对话，适合让孩子进行表演型的阅读。如：《小黄鸡和小黑鸡》等等。</p><p><br/></p><p>&nbsp; &nbsp; 3、想象型</p><p><br/></p><p>&nbsp; &nbsp; 想象是阅读的一个特质，想象也是阅读的重要方法。但是在小班选择这类图画书作为教材似乎有些难度，脱离了生活经验，小班孩子的想象力毕竟有限。</p><p><br/></p><p>&nbsp; &nbsp; 4、综合型</p><p><br/></p><p>&nbsp; &nbsp; 在实际的教学中，有的图画书往往融合了以上多种类型，有赏读，有表演，有想象，可以选取一个重点，融合其他要点，在多法融合中培养孩子的综合素养。</p><p><br/></p>','','',1421308902) [ RunTime:0.000704s ]
+
+[ 2015-01-15T16:01:44+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098962
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000857s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000956s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000934s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001097s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000796s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000884s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000578s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001082s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001003s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000237s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000157s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000174s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012158s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012247s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000446s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000458s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000331s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002010s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000746s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000823s ]
+
+[ 2015-01-15T16:01:44+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098963
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000858s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000949s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001275s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000982s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000967s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001290s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000844s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001562s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001413s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000076s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000067s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000065s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011232s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011314s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000435s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000430s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000325s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001880s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000721s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000788s ]
+
+[ 2015-01-15T16:01:45+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000963s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001061s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001105s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000829s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000655s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000834s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.001320s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001462s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000790s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000952s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000148s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000254s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000140s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000139s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000060s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000131s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000058s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 12 ) LIMIT 1   [ RunTime:0.000132s ]
+
+[ 2015-01-15T16:01:45+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001290s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000909s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000882s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000690s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000861s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000562s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000935s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000082s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000070s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000078s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000073s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000058s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000071s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000071s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000095s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000089s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000076s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 12 ) LIMIT 1   [ RunTime:0.000076s ]
+
+[ 2015-01-15T16:01:47+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate/type/article.html?id=681&_=1421308098964
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001289s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001427s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000907s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001313s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001023s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000997s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001264s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000835s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001500s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000939s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001409s ]
+NOTIC: [8] Undefined index:  content /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 41 行.
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000358s ]
+SQL: SELECT * FROM `tutor_article` WHERE ( `id` = 681 ) LIMIT 1   [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index:  relative_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 138 行.
+SQL: SELECT * FROM `tutor_type` ORDER BY number DESC  [ RunTime:0.000303s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013990s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014080s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000470s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000430s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001914s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000683s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000751s ]
+
+[ 2015-01-15T16:01:50+08:00 ] 171.107.24.74 /admin.php/admin/index/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001282s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000897s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001291s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001032s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001083s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000891s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000889s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000963s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421308910 WHERE ( `userid` = 2 ) [ RunTime:0.000283s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000429s ]
+SQL: SELECT `lastlogintime`,`lastloginip` FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000244s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant lastlogintime - assumed 'lastlogintime' /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/5bd0925e25bf58793df33dc58ca05648.php 第 62 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012469s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000434s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000437s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000324s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001937s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000724s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2015-01-15T16:02:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000868s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000969s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000621s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000691s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000698s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000666s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421308946 WHERE ( `userid` = 2 ) [ RunTime:0.000191s ]
+
+[ 2015-01-15T16:05:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.014427s ]
+INFO: [ route_check ] --END-- [ RunTime:0.014689s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.022643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022754s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001539s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001381s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001344s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.001176s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001262s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421309126 WHERE ( `userid` = 2 ) [ RunTime:0.000290s ]
+
+[ 2015-01-15T16:06:15+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000905s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000978s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001321s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001057s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000856s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001016s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000635s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000975s ]
+NOTIC: [2] Missing argument 3 for img_match(), called in /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php on line 44 and defined /home/aijiajia/public_html/Admin/Common/common.php 第 37 行.
+NOTIC: [8] Undefined variable: num /home/aijiajia/public_html/Admin/Common/common.php 第 40 行.
+SQL: UPDATE `tutor_article` SET `title`='如何帮助孩子选早期阅读教材？',`type`=3,`content`='<p>&nbsp; &nbsp; 对于处在语言发展关键期的小班孩子来说，阅读是生活，阅读是游戏，更是学习。那么小班孩子开展早期阅读到底该选择什么样的内容？选好内容后又该如何解读教材，设计活动？<br/></p><p style=\"text-align: center\"><img src=\"http://www.aijiajiao.com/Uploads/20150115/1421309010459599.png\" title=\"cmsupload-2014-0325-20140325105325833.png\" width=\"500\" height=\"379\" border=\"0\" hspace=\"0\" vspace=\"0\" style=\"width: 500px; height: 379px;\"/></p><p>&nbsp; &nbsp; <strong>一、思考的问题：如何选择小班孩子早期阅读的教材？</strong></p><p><br/></p><p>&nbsp; &nbsp; 1、鲜明的视觉形像：孩子喜欢鲜明的色彩和形象，对于抽象的、混沌的画面，因无法理解而不感兴趣。线条的变化和形状的构成，应有明确的关联，因为他们的感觉是敏锐的。</p><p><br/></p><p>&nbsp; &nbsp; 2、象征的、典型的形态：孩子们喜爱以象征的、典型的形式来表现的图画。</p><p><br/></p><p>&nbsp; &nbsp; 3、融合在画中的想象力：画面内容要有符合孩子心理的想象，想象愈丰富、愈贴近孩子生活的愈受欢迎。</p><p><br/></p><p>&nbsp; &nbsp; 4、故事情节清晰：故事的情节应清晰，故事角色不宜过多，情节简单明了，便于孩子体会和理解。要符合儿童的生活经验，能帮助儿童扩展理解力、想象力、思考力。</p><p><br/></p><p>&nbsp; &nbsp; 5、故事语言必须有自然的、美妙的韵律，便于孩子模仿，从而进行情感交流及表现表达。</p><p style=\"text-align: center\"><img src=\"http://www.aijiajiao.com/Uploads/20150115/1421309148793198.jpg\" title=\"201371133145529.jpg\" width=\"500\" height=\"333\" border=\"0\" hspace=\"0\" vspace=\"0\" style=\"width: 500px; height: 333px;\"/></p><p>&nbsp; &nbsp;<strong> 二、对小班早期阅读教材的理解</strong></p><p><br/></p><p>&nbsp; &nbsp; 1、赏读型</p><p><br/></p><p>&nbsp; &nbsp; 赏读型的图画书一般故事性不太强。这一类图书阅读重在反复，欣赏语言的神韵与声韵，培养良好的语感，同时，此类绘本的图画往往也用抒情优美细腻的笔触，美得令人心醉，所以还要多引导孩子静静地欣赏画面。</p><p><br/></p><p>&nbsp; &nbsp; 2、表演型</p><p><br/></p><p>&nbsp; &nbsp; 有一定故事情节，人物形象鲜明，起码有两人或以上的对话，适合让孩子进行表演型的阅读。如：《小黄鸡和小黑鸡》等等。</p><p><br/></p><p>&nbsp; &nbsp; 3、想象型</p><p><br/></p><p>&nbsp; &nbsp; 想象是阅读的一个特质，想象也是阅读的重要方法。但是在小班选择这类图画书作为教材似乎有些难度，脱离了生活经验，小班孩子的想象力毕竟有限。</p><p><br/></p><p>&nbsp; &nbsp; 4、综合型</p><p><br/></p><p>&nbsp; &nbsp; 在实际的教学中，有的图画书往往融合了以上多种类型，有赏读，有表演，有想象，可以选取一个重点，融合其他要点，在多法融合中培养孩子的综合素养。</p><p><br/></p>',`keywords`='育儿，阅读，早教',`description`='对于处在语言发展关键期的小班孩子来说，阅读是生活，阅读是游戏，更是学习。那么小班孩子开展早期阅读到底该选择什么样的内容？选好内容后又该如何解读教材，设计活动？',`cover`='http://www.aijiajiao.com/Uploads/20150115/1421309010459599.png' WHERE ( `id` = 681 ) [ RunTime:0.000432s ]
+SQL: SELECT `id`,`path` FROM `tutor_article_img` WHERE ( `aid` = 681 )  [ RunTime:0.001385s ]
+NOTIC: [8] Undefined variable: ext_id_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [2] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [8] Undefined variable: ext_id_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [2] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [8] Undefined variable: ext_id_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 100 行.
+SQL: INSERT INTO `tutor_article_img` (`aid`,`path`) VALUES (681,'./Uploads/20150115/1421309010459599.png') [ RunTime:0.000191s ]
+SQL: INSERT INTO `tutor_article_img` (`aid`,`path`) VALUES (681,'./Uploads/20150115/1421309148793198.jpg') [ RunTime:0.000131s ]
+
+[ 2015-01-15T16:06:26+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098965
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001215s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001413s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000720s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001425s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001159s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000622s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000959s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000226s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000165s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000148s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012416s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012544s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000763s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000720s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000814s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003087s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001041s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001140s ]
+
+[ 2015-01-15T16:06:26+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098966
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000863s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000623s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001181s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000847s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001398s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000616s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000942s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000073s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000066s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000070s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011225s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011331s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000470s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000447s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000335s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000518s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001954s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000837s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000903s ]
+
+[ 2015-01-15T16:06:27+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001287s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001439s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000619s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000688s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001267s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001019s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001009s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000789s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001393s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000919s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001416s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000211s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000328s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000214s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000200s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000081s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000055s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000084s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000218s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000084s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 12 ) LIMIT 1   [ RunTime:0.000204s ]
+
+[ 2015-01-15T16:06:28+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000910s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001004s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000617s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001329s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001027s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001279s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000865s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000853s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001410s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001431s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000079s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000086s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000069s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000077s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000075s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000058s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000076s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000072s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000074s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000073s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 12 ) LIMIT 1   [ RunTime:0.000073s ]
+
+[ 2015-01-15T16:06:42+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate/type/article.html?_=1421308098967
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000958s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001149s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000714s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000792s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000695s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.007892s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000838s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001062s ]
+NOTIC: [8] Undefined index:  content /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 41 行.
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SELECT * FROM `tutor_article` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000196s ]
+SQL: SELECT * FROM `tutor_type` ORDER BY number DESC  [ RunTime:0.000237s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019313s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000462s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000469s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000342s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.010548s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012013s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000711s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000779s ]
+
+[ 2015-01-15T16:06:45+08:00 ] 171.107.24.74 /admin.php/admin/index/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001294s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001433s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002561s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001036s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000723s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000675s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001059s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421309205 WHERE ( `userid` = 2 ) [ RunTime:0.000345s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000431s ]
+SQL: SELECT `lastlogintime`,`lastloginip` FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000268s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant lastlogintime - assumed 'lastlogintime' /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/5bd0925e25bf58793df33dc58ca05648.php 第 62 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016878s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016977s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000447s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000456s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002018s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000695s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000767s ]
+
+[ 2015-01-15T16:08:27+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001399s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001545s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001062s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001934s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.004224s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.007021s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000929s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000998s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421309307 WHERE ( `userid` = 2 ) [ RunTime:0.000336s ]
+
+[ 2015-01-15T16:11:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000853s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000945s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000948s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000709s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000629s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000669s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421309486 WHERE ( `userid` = 2 ) [ RunTime:0.000237s ]
+
+[ 2015-01-15T16:13:32+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001009s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001186s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000646s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000716s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001177s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000883s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000852s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.001195s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000939s ]
+NOTIC: [2] Missing argument 3 for img_match(), called in /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php on line 44 and defined /home/aijiajia/public_html/Admin/Common/common.php 第 37 行.
+NOTIC: [8] Undefined variable: num /home/aijiajia/public_html/Admin/Common/common.php 第 40 行.
+NOTIC: [8] Undefined offset:  0 /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 46 行.
+NOTIC: [8] Undefined index:  cover /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 54 行.
+SQL: INSERT INTO `tutor_official` (`title`,`content`,`cover`,`type`,`atype`,`akind`,`time`) VALUES ('孩子多咀嚼，有助于牙齿美观','<p>&nbsp; &nbsp; 孩子牙齿不整齐怎么办？很多家长是不是都有这样的困惑？其实，牙齿的不美观和孩子12岁之前咀嚼过少有关。在此建议家长：不要担心宝宝乳牙的承受能力，在孩子具备咀嚼力时，就要让他多咀嚼一些耐嚼的食物，这是有益于将来牙齿美观的。<br/></p><p><br/></p><p>&nbsp; &nbsp; <strong>1、更要多咀嚼</strong></p><p><br/></p><p>&nbsp; &nbsp; 颌骨发育不够，导致牙齿没有足够的“住房面积”，便造成了牙齿拥挤、牙列不齐现象。而乳牙全部换完之后（一般在十一二岁），颌骨基本定型，所以儿童时期多咀嚼非常关键。</p><p><br/></p><p>&nbsp; &nbsp; 孩子的食物不能太精细，在孩子有咀嚼能力时，就可以让他多吃一点耐嚼的食物，如青苹果、熟黄豆、煮花生、芹菜等。特别是父母的脸型若比较长、尖，颌骨一般比较窄，孩子可能遗传这种脸型。此外，父母本身就有牙齿拥挤现象的，后代更要多多练习咀嚼。</p><p><br/></p><p>&nbsp; &nbsp; <strong>2、硬物≠耐嚼物</strong></p><p><br/></p><p>&nbsp; &nbsp; 在咀嚼问题上，需提醒大家的是，能“增加咀嚼力”的食物不等于坚硬的食物。</p><p><br/></p><p>&nbsp; &nbsp; 要选择能让牙齿多嚼动的食物，而非需要牙齿“爆发力”的食物。例如鸡翅、鸭脖子、肉骨头属于需要“爆发力”才能咬断的，并非耐咀嚼的食物；而偏硬的苹果、莲藕、马蹄、芹菜等就属于需要“费力”多嚼的食物。</p><p><br/></p><p>&nbsp; &nbsp; 此外，不建议家长给小朋友吃甘蔗来“磨炼”牙齿，因为甘蔗含糖量高容易造成龋齿，又需要“爆发力”撕咬，容易咬崩牙，造成牙齿缺损。</p><p><br/></p><p>&nbsp; &nbsp; <strong>3、牙齿拥挤，乳牙换完就矫牙</strong></p><p><br/></p><p>&nbsp; &nbsp; 若孩子存有牙齿拥挤问题，如龅牙（哨牙、上颌前牙向前突出）、牙列不齐等问题，则要在乳牙完全换成恒牙的时候及时到口腔科矫正。这个年龄一般为十一二岁，是矫牙的最佳时期，超过20岁的矫牙效果不好。如果是“地包天”，则要在3岁矫治。</p><p><br/></p>',null,2,2,1,1421309612) [ RunTime:0.000206s ]
+ERR: 1048:Column 'cover' cannot be null
+ [ SQL语句 ] : INSERT INTO `tutor_official` (`title`,`content`,`cover`,`type`,`atype`,`akind`,`time`) VALUES ('孩子多咀嚼，有助于牙齿美观','<p>&nbsp; &nbsp; 孩子牙齿不整齐怎么办？很多家长是不是都有这样的困惑？其实，牙齿的不美观和孩子12岁之前咀嚼过少有关。在此建议家长：不要担心宝宝乳牙的承受能力，在孩子具备咀嚼力时，就要让他多咀嚼一些耐嚼的食物，这是有益于将来牙齿美观的。<br/></p><p><br/></p><p>&nbsp; &nbsp; <strong>1、更要多咀嚼</strong></p><p><br/></p><p>&nbsp; &nbsp; 颌骨发育不够，导致牙齿没有足够的“住房面积”，便造成了牙齿拥挤、牙列不齐现象。而乳牙全部换完之后（一般在十一二岁），颌骨基本定型，所以儿童时期多咀嚼非常关键。</p><p><br/></p><p>&nbsp; &nbsp; 孩子的食物不能太精细，在孩子有咀嚼能力时，就可以让他多吃一点耐嚼的食物，如青苹果、熟黄豆、煮花生、芹菜等。特别是父母的脸型若比较长、尖，颌骨一般比较窄，孩子可能遗传这种脸型。此外，父母本身就有牙齿拥挤现象的，后代更要多多练习咀嚼。</p><p><br/></p><p>&nbsp; &nbsp; <strong>2、硬物≠耐嚼物</strong></p><p><br/></p><p>&nbsp; &nbsp; 在咀嚼问题上，需提醒大家的是，能“增加咀嚼力”的食物不等于坚硬的食物。</p><p><br/></p><p>&nbsp; &nbsp; 要选择能让牙齿多嚼动的食物，而非需要牙齿“爆发力”的食物。例如鸡翅、鸭脖子、肉骨头属于需要“爆发力”才能咬断的，并非耐咀嚼的食物；而偏硬的苹果、莲藕、马蹄、芹菜等就属于需要“费力”多嚼的食物。</p><p><br/></p><p>&nbsp; &nbsp; 此外，不建议家长给小朋友吃甘蔗来“磨炼”牙齿，因为甘蔗含糖量高容易造成龋齿，又需要“爆发力”撕咬，容易咬崩牙，造成牙齿缺损。</p><p><br/></p><p>&nbsp; &nbsp; <strong>3、牙齿拥挤，乳牙换完就矫牙</strong></p><p><br/></p><p>&nbsp; &nbsp; 若孩子存有牙齿拥挤问题，如龅牙（哨牙、上颌前牙向前突出）、牙列不齐等问题，则要在乳牙完全换成恒牙的时候及时到口腔科矫正。这个年龄一般为十一二岁，是矫牙的最佳时期，超过20岁的矫牙效果不好。如果是“地包天”，则要在3岁矫治。</p><p><br/></p>',null,2,2,1,1421309612)
+SQL: INSERT INTO `tutor_article` (`title`,`type`,`content`,`keywords`,`description`,`createtime`) VALUES ('孩子多咀嚼，有助于牙齿美观',8,'<p>&nbsp; &nbsp; 孩子牙齿不整齐怎么办？很多家长是不是都有这样的困惑？其实，牙齿的不美观和孩子12岁之前咀嚼过少有关。在此建议家长：不要担心宝宝乳牙的承受能力，在孩子具备咀嚼力时，就要让他多咀嚼一些耐嚼的食物，这是有益于将来牙齿美观的。<br/></p><p><br/></p><p>&nbsp; &nbsp; <strong>1、更要多咀嚼</strong></p><p><br/></p><p>&nbsp; &nbsp; 颌骨发育不够，导致牙齿没有足够的“住房面积”，便造成了牙齿拥挤、牙列不齐现象。而乳牙全部换完之后（一般在十一二岁），颌骨基本定型，所以儿童时期多咀嚼非常关键。</p><p><br/></p><p>&nbsp; &nbsp; 孩子的食物不能太精细，在孩子有咀嚼能力时，就可以让他多吃一点耐嚼的食物，如青苹果、熟黄豆、煮花生、芹菜等。特别是父母的脸型若比较长、尖，颌骨一般比较窄，孩子可能遗传这种脸型。此外，父母本身就有牙齿拥挤现象的，后代更要多多练习咀嚼。</p><p><br/></p><p>&nbsp; &nbsp; <strong>2、硬物≠耐嚼物</strong></p><p><br/></p><p>&nbsp; &nbsp; 在咀嚼问题上，需提醒大家的是，能“增加咀嚼力”的食物不等于坚硬的食物。</p><p><br/></p><p>&nbsp; &nbsp; 要选择能让牙齿多嚼动的食物，而非需要牙齿“爆发力”的食物。例如鸡翅、鸭脖子、肉骨头属于需要“爆发力”才能咬断的，并非耐咀嚼的食物；而偏硬的苹果、莲藕、马蹄、芹菜等就属于需要“费力”多嚼的食物。</p><p><br/></p><p>&nbsp; &nbsp; 此外，不建议家长给小朋友吃甘蔗来“磨炼”牙齿，因为甘蔗含糖量高容易造成龋齿，又需要“爆发力”撕咬，容易咬崩牙，造成牙齿缺损。</p><p><br/></p><p>&nbsp; &nbsp; <strong>3、牙齿拥挤，乳牙换完就矫牙</strong></p><p><br/></p><p>&nbsp; &nbsp; 若孩子存有牙齿拥挤问题，如龅牙（哨牙、上颌前牙向前突出）、牙列不齐等问题，则要在乳牙完全换成恒牙的时候及时到口腔科矫正。这个年龄一般为十一二岁，是矫牙的最佳时期，超过20岁的矫牙效果不好。如果是“地包天”，则要在3岁矫治。</p><p><br/></p>','','',1421309612) [ RunTime:0.000405s ]
+
+[ 2015-01-15T16:13:34+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098968
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000927s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000687s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000763s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000869s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000582s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.000978s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000982s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000263s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011948s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000494s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000490s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000636s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002151s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000757s ]
+
+[ 2015-01-15T16:13:35+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001002s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001100s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000974s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000896s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000892s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001018s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000590s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000580s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001067s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000983s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000219s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000319s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 8 ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000222s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000153s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000105s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000058s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000158s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000057s ]
+
+[ 2015-01-15T16:13:35+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098969
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001401s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001585s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001054s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001134s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000924s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.001966s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001349s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.002478s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000574s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001086s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000672s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001020s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000106s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000081s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000070s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012098s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000497s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000466s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001999s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000776s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000843s ]
+
+[ 2015-01-15T16:13:36+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001327s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001463s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000925s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001029s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000933s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000642s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000818s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000554s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.000927s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000956s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000066s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000068s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 8 ) LIMIT 1   [ RunTime:0.000067s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000059s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000059s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000056s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000057s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000060s ]
+
+[ 2015-01-15T16:13:38+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate/type/article.html?id=682&_=1421308098970
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001078s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001192s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001238s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.001011s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000797s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001385s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001396s ]
+NOTIC: [8] Undefined index:  content /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 41 行.
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SELECT * FROM `tutor_article` WHERE ( `id` = 682 ) LIMIT 1   [ RunTime:0.000277s ]
+NOTIC: [8] Undefined index:  relative_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 138 行.
+SQL: SELECT * FROM `tutor_type` ORDER BY number DESC  [ RunTime:0.000253s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 143 行.
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012449s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012812s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000534s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000556s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000329s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000567s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002170s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000667s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2015-01-15T16:13:41+08:00 ] 171.107.24.74 /admin.php/admin/index/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000867s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000962s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000625s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000702s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000963s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001044s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000781s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000787s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000681s ]
+SQL: SELECT `rolename` FROM `tutor_admin_role` WHERE ( `roleid` = 1 ) LIMIT 1   [ RunTime:0.000267s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421309621 WHERE ( `userid` = 2 ) [ RunTime:0.000224s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `parentid` = 0 ) AND ( `display` = 1 ) ORDER BY `listorder` ASC LIMIT 1000   [ RunTime:0.000291s ]
+SQL: SELECT `lastlogintime`,`lastloginip` FROM `tutor_admin` WHERE ( `userid` = 2 ) LIMIT 1   [ RunTime:0.000158s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Use of undefined constant lastlogintime - assumed 'lastlogintime' /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/5bd0925e25bf58793df33dc58ca05648.php 第 62 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012157s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012242s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000469s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000510s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000332s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000561s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002076s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000691s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000764s ]
+
+[ 2015-01-15T16:14:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000973s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000692s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000772s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000992s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000708s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000623s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000670s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421309666 WHERE ( `userid` = 2 ) [ RunTime:0.000317s ]
+
+[ 2015-01-15T16:16:00+08:00 ] 171.107.24.74 /admin.php/admin/content/article_operate.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000990s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000707s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001021s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000730s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000888s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000593s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000567s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000962s ]
+NOTIC: [2] Missing argument 3 for img_match(), called in /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php on line 44 and defined /home/aijiajia/public_html/Admin/Common/common.php 第 37 行.
+NOTIC: [8] Undefined variable: num /home/aijiajia/public_html/Admin/Common/common.php 第 40 行.
+SQL: UPDATE `tutor_article` SET `title`='孩子多咀嚼，有助于牙齿美观',`type`=8,`content`='<p style=\"text-align: center\"><img src=\"http://www.aijiajiao.com/Public/js/ueditor/php/upload/4451421309652.jpg\" title=\"2015011216144794afa_550.jpg\" width=\"450\" height=\"388\" border=\"0\" hspace=\"0\" vspace=\"0\" style=\"width: 450px; height: 388px;\"/></p><p>&nbsp; &nbsp; 孩子牙齿不整齐怎么办？很多家长是不是都有这样的困惑？其实，牙齿的不美观和孩子12岁之前咀嚼过少有关。在此建议家长：不要担心宝宝乳牙的承受能力，在孩子具备咀嚼力时，就要让他多咀嚼一些耐嚼的食物，这是有益于将来牙齿美观的。<br/></p><p><br/></p><p>&nbsp; &nbsp; <strong>1、更要多咀嚼</strong></p><p><br/></p><p>&nbsp; &nbsp; 颌骨发育不够，导致牙齿没有足够的“住房面积”，便造成了牙齿拥挤、牙列不齐现象。而乳牙全部换完之后（一般在十一二岁），颌骨基本定型，所以儿童时期多咀嚼非常关键。</p><p><br/></p><p>&nbsp; &nbsp; 孩子的食物不能太精细，在孩子有咀嚼能力时，就可以让他多吃一点耐嚼的食物，如青苹果、熟黄豆、煮花生、芹菜等。特别是父母的脸型若比较长、尖，颌骨一般比较窄，孩子可能遗传这种脸型。此外，父母本身就有牙齿拥挤现象的，后代更要多多练习咀嚼。</p><p style=\"text-align: center\"><img src=\"http://www.aijiajiao.com/Uploads/20150115/1421309721292461.jpg\" title=\"file_1405579429.jpg\" width=\"450\" height=\"278\" border=\"0\" hspace=\"0\" vspace=\"0\" style=\"width: 450px; height: 278px;\"/></p><p>&nbsp; &nbsp; <strong>2、硬物≠耐嚼物</strong></p><p><br/></p><p>&nbsp; &nbsp; 在咀嚼问题上，需提醒大家的是，能“增加咀嚼力”的食物不等于坚硬的食物。</p><p><br/></p><p>&nbsp; &nbsp; 要选择能让牙齿多嚼动的食物，而非需要牙齿“爆发力”的食物。例如鸡翅、鸭脖子、肉骨头属于需要“爆发力”才能咬断的，并非耐咀嚼的食物；而偏硬的苹果、莲藕、马蹄、芹菜等就属于需要“费力”多嚼的食物。</p><p><br/></p><p>&nbsp; &nbsp; 此外，不建议家长给小朋友吃甘蔗来“磨炼”牙齿，因为甘蔗含糖量高容易造成龋齿，又需要“爆发力”撕咬，容易咬崩牙，造成牙齿缺损。</p><p><br/></p><p>&nbsp; &nbsp; <strong>3、牙齿拥挤，乳牙换完就矫牙</strong></p><p><br/></p><p>&nbsp; &nbsp; 若孩子存有牙齿拥挤问题，如龅牙（哨牙、上颌前牙向前突出）、牙列不齐等问题，则要在乳牙完全换成恒牙的时候及时到口腔科矫正。这个年龄一般为十一二岁，是矫牙的最佳时期，超过20岁的矫牙效果不好。如果是“地包天”，则要在3岁矫治。</p><p><br/></p>',`keywords`='育儿，护牙',`description`='孩子牙齿不整齐怎么办？很多家长是不是都有这样的困惑？其实，牙齿的不美观和孩子12岁之前咀嚼过少有关。在此建议家长：不要担心宝宝乳牙的承受能力，在孩子具备咀嚼力时，就要让他多咀嚼一些耐嚼的食物，这是有益于将来牙齿美观的。',`cover`='http://www.aijiajiao.com/Public/js/ueditor/php/upload/4451421309652.jpg' WHERE ( `id` = 682 ) [ RunTime:0.000669s ]
+SQL: SELECT `id`,`path` FROM `tutor_article_img` WHERE ( `aid` = 682 )  [ RunTime:0.000307s ]
+NOTIC: [8] Undefined variable: ext_id_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [2] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [8] Undefined variable: ext_id_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [2] array_search() [<a href='function.array-search'>function.array-search</a>]: Wrong datatype for second argument /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 92 行.
+NOTIC: [8] Undefined variable: ext_id_path /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 100 行.
+SQL: INSERT INTO `tutor_article_img` (`aid`,`path`) VALUES (682,'./Public/js/ueditor/php/upload/4451421309652.jpg') [ RunTime:0.000184s ]
+SQL: INSERT INTO `tutor_article_img` (`aid`,`path`) VALUES (682,'./Uploads/20150115/1421309721292461.jpg') [ RunTime:0.000141s ]
+
+[ 2015-01-15T16:16:02+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098971
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000917s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001013s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000686s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001254s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001249s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000794s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000788s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001383s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001406s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000100s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000096s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000114s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.035306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035407s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.011853s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000716s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000795s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014163s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001064s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001166s ]
+
+[ 2015-01-15T16:16:02+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list/menuid/18.html?_=1421308098972
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000961s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000897s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000703s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000687s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000859s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000569s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000550s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001409s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001374s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 18 ) LIMIT 1   [ RunTime:0.000111s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 17 ) LIMIT 1   [ RunTime:0.000099s ]
+SQL: SELECT * FROM `tutor_menu` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.000104s ]
+NOTIC: [8] Use of undefined constant currentpos - assumed 'currentpos' /home/aijiajia/public_html/Admin/Modules/Admin/Action/ContentAction.class.php 第 32 行.
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined variable: adminList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 19 行.
+NOTIC: [8] Undefined variable: moduleList /home/aijiajia/public_html/Admin/Runtime/Cache/Admin/11a2ff302a27f9edd0558ac938feb7a2.php 第 24 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011854s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000427s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000450s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.030708s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.032112s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001039s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2015-01-15T16:16:03+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000849s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000924s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001030s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000911s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000683s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.000846s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000547s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000610s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.000965s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000236s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 8 ) LIMIT 1   [ RunTime:0.000075s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000064s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000076s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000066s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000064s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000068s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000064s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000062s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000064s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000064s ]
+
+[ 2015-01-15T16:16:03+08:00 ] 171.107.24.74 /admin.php/admin/content/article_list.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001273s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001400s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000764s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001218s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000986s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000970s ]
+SQL: SHOW COLUMNS FROM `tutor_article` [ RunTime:0.001246s ]
+SQL: SHOW COLUMNS FROM `tutor_article_img` [ RunTime:0.000826s ]
+SQL: SHOW COLUMNS FROM `tutor_type` [ RunTime:0.000813s ]
+SQL: SHOW COLUMNS FROM `tutor_lesson` [ RunTime:0.001368s ]
+SQL: SHOW COLUMNS FROM `tutor_banner` [ RunTime:0.000907s ]
+SQL: SHOW COLUMNS FROM `tutor_official` [ RunTime:0.001379s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tutor_article` LIMIT 1   [ RunTime:0.000096s ]
+SQL: SELECT `id`,`title`,`createtime`,`type`,`keywords`,`click` FROM `tutor_article` ORDER BY id DESC LIMIT 0,10   [ RunTime:0.000096s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 8 ) LIMIT 1   [ RunTime:0.000089s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 3 ) LIMIT 1   [ RunTime:0.000090s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 7 ) LIMIT 1   [ RunTime:0.000088s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000088s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000084s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000082s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 16 ) LIMIT 1   [ RunTime:0.000088s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 2 ) LIMIT 1   [ RunTime:0.000083s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000084s ]
+SQL: SELECT `name` FROM `tutor_type` WHERE ( `number` = 5 ) LIMIT 1   [ RunTime:0.000095s ]
+
+[ 2015-01-15T16:17:27+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001144s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001403s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010911s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.001342s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000773s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.001098s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000878s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000755s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421309847 WHERE ( `userid` = 2 ) [ RunTime:0.000243s ]
+
+[ 2015-01-15T16:20:26+08:00 ] 171.107.24.74 /admin.php/admin/index/public_sessionLife.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001025s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001221s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role_priv` [ RunTime:0.000949s ]
+SQL: SHOW COLUMNS FROM `tutor_log` [ RunTime:0.000699s ]
+SQL: SHOW COLUMNS FROM `tutor_admin` [ RunTime:0.000779s ]
+SQL: SHOW COLUMNS FROM `tutor_admin_role` [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `tutor_times` [ RunTime:0.000621s ]
+SQL: SHOW COLUMNS FROM `tutor_menu` [ RunTime:0.000724s ]
+SQL: UPDATE `tutor_admin` SET `lastlifetime`=1421310026 WHERE ( `userid` = 2 ) [ RunTime:0.000189s ]
+
+[ 2015-01-15T19:47:57+08:00 ] 80.93.54.37 /admin.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000701s ]
+

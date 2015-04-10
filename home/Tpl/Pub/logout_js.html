@@ -1,0 +1,42 @@
+<div id="login_out" title="登出成功！"></div>	
+<script type="text/javascript">
+$(function($){
+ //登出成功显示
+ $('#login_out').dialog({
+	autoOpen: false,
+	resizable: false,
+	modal: true,
+	draggable: false,
+	open: function(event,ui){	
+		var wait = document.getElementById('wait_time');
+		var interval = setInterval(function(){			
+			var time = --wait.innerHTML;
+			if(time <= 0) {
+			 location.href = $('#href').attr('href');
+			 clearInterval(interval);
+			}
+		},1000);						
+	}
+ });
+});
+
+//登出
+function logout(){
+ var jump = '{$navi.log_jump}';
+ $.post('{:U(\'Index/loginOut\')}',
+        function(data){
+		 if(data.status == 1){
+		  if (jump == 1) {
+		  	var prompt = '<a href="'+data.data+'" id="href">页面将在 <b id="wait_time">1</b> 秒后跳转，如不想等待请点击此处。</a>';
+		  } else {
+		  	var prompt = '<a href="javascript:location.reload();" id="href">页面将在 <b id="wait_time">1</b> 秒后跳转，如不想等待请点击此处。</a>';
+		  }
+		  $('#login_out').on('dialogclose', function( event, ui ) {location.href = $('#href').attr('href')}); 	
+		  $('#login_out').html(prompt);	 
+		  $('#login_out').dialog('open');
+		 } else {
+		  alert(data.info);
+		 }
+ });
+}
+</script>	

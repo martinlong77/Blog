@@ -1,0 +1,170 @@
+<script type="text/javascript">
+$(function($){
+//上传头像(uploadify插件)
+		$("#user-pic").uploadify({
+			'queueSizeLimit' : 1,
+			'removeTimeout' : 0.5,
+			'preventCaching' : true,
+			'multi'    : false,
+			'swf' 			: '__PUBLIC__/js/uploadify/uploadify.swf',
+			'uploader' 		: '{:U(\'profile/editInfo?edit=avatar&step=1&uid=\'.$_SESSION['id'])}',
+			'buttonText' 	: '<i class="userup-icon"></i>上传头像',
+			'width' 		: '200',
+			'height' 		: '200',
+			'fileTypeExts'	: '*.jpg; *.png; *.gif; *.jpeg;',
+			'onUploadSuccess' : function(file, data, response){			 
+				var data = $.parseJSON(data);
+				if(data['status'] == 0){
+					$('#edit_result').text(data['info']);
+					$('#edit_result').dialog('open');
+					return;
+				}
+				$('.tcrop').text('头像预览');
+				$('.upload-btn').hide(1000);
+				var preview = $('.upload-area').children('#preview-hidden');
+				preview.show().removeClass('hidden');
+				//两个预览窗口赋值
+				$('.crop').children('img').attr('src',data['data']+'?random='+Math.random());
+				//隐藏表单赋值
+				$('#img_src').val(data['data']);
+				//绑定需要裁剪的图片
+				var img = $('<img />');
+				preview.append(img);
+				preview.children('img').attr('src',data['data']+'?random='+Math.random());
+				var crop_img = preview.children('img');
+				crop_img.attr('id',"cropbox").show();
+				var img = new Image();
+				img.src = data['data']+'?random='+Math.random();
+				//根据图片大小在画布里居中
+				img.onload = function(){
+					var img_height = 0;
+					var img_width = 0;
+					var real_height = img.height;
+					var real_width = img.width;
+					if(real_height > real_width && real_height > 500){
+						var persent = real_height / 500;
+						real_height = 500;
+						real_width = real_width / persent;
+					}else if(real_width > real_height && real_width > 500){
+						var persent = real_width / 500;
+						real_width = 500;
+						real_height = real_height / persent;
+					}
+
+					if(real_height < 500){
+						img_height = (500 - real_height)/2;	
+					}
+					if(real_width < 500){
+						img_width = (500 - real_width)/2;
+					}	
+					preview.css({width:(500-img_width)+'px',height:(500-img_height)+'px'});
+					preview.css({paddingTop:img_height+'px',paddingLeft:img_width+'px'});		
+				}
+				//裁剪插件
+				$('#cropbox').Jcrop({
+		            bgColor:'#333',   //选区背景色
+		            bgFade:true,      //选区背景渐显
+		            fadeTime:1000,    //背景渐显时间
+		            allowSelect:false, //是否可以选区，
+		            allowResize:true, //是否可以调整选区大小
+		            aspectRatio: 1,     //约束比例
+		            minSize : [180,180],//可选最小大小
+		            boxWidth : 500,		//画布宽度
+		            boxHeight : 500,	//画布高度
+		            onChange: showPreview,//改变时重置预览图
+		            onSelect: showPreview,//选择时重置预览图
+		            setSelect:[ 0, 0, 180, 180],//初始化时位置
+		            onSelect: function (c){	//选择时动态赋值，该值是最终传给程序的参数！
+			            $('#x').val(c.x);//需裁剪的左上角X轴坐标
+			            $('#y').val(c.y);//需裁剪的左上角Y轴坐标
+			            $('#w').val(c.w);//需裁剪的宽度
+			            $('#h').val(c.h);//需裁剪的高度
+		           }
+		        });
+				//提交裁剪好的图片
+				$('.save-pic').click(function(){					
+					if($('#preview-hidden').html() == ''){
+						$('#edit_result').text('请先选择图片！');
+						$('#edit_result').dialog('open');
+					}else{
+						//由于GD库裁剪gif图片很慢，所以长时间显示弹出框
+						$('#edit_result').text('正在保存头像请稍等...');
+						$( "#edit_result" ).on('dialogopen', function(event,ui) { } );
+						$('#edit_result').dialog('open');
+
+						//是否保留原图
+						if ( $('#keep:checked').val() == 1){
+				  		 keep_ori = 1;
+				 		} else {
+				  		 keep_ori = 0;
+				 		}
+
+				 		var x = $('#x').val();
+				 		var y = $('#y').val();
+				 		var w = $('#w').val();
+				 		var h = $('#h').val();
+				 		var src = $('#img_src').val();
+				 		
+				 		//alert('x:'+x+', y:'+y+', w:'+w+', h:'+h);
+						
+						//提交位置参数
+						$.post('{:U(\'profile/editInfo?edit=avatar&step=2&uid=\'.$_SESSION['id'])}',
+						   {x:x,y:y,w:w,h:h,keep_ori:keep_ori,src:src},
+						   function(data){
+						   	$('#edit_result').text(data.info);
+						   	if (data.status == 1) {
+							 setTimeout('location.reload()',1000);							
+							}; 
+						});											
+					}
+				});
+								 
+				//重新上传,清空裁剪参数
+				var i = 0;
+				$('.reupload-img').click(function(){
+					var current_avatar = '{$_SESSION.avatar}';
+				    $.post('{:U(\'profile/editInfo?edit=avatar&step=r&uid=\'.$_SESSION['id'])}');
+				    $('.tcrop').text('当前头像');
+				    $('.crop').children('img').removeAttr('style');	//移除css属性
+				    $('.crop').children('img').attr('src',current_avatar+'?random='+Math.random());
+					$('.upload-btn').show(1000);
+					$('#preview-hidden').find('*').remove();
+					$('#preview-hidden').hide().addClass('hidden').css({'padding-top':0,'padding-left':0});
+				});
+		     }
+		});
+		//预览图
+
+		function showPreview(coords){
+			var img_width = $('#cropbox').width();
+			var img_height = $('#cropbox').height();
+			  //根据包裹的容器宽高,设置被除数
+			  var rx = 180 / coords.w;
+			  var ry = 180 / coords.h; 
+			  $('#crop-preview-180').css({
+			    width: Math.round(rx * img_width) + 'px',
+			    height: Math.round(ry * img_height) + 'px',
+			    marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+			    marginTop: '-' + Math.round(ry * coords.y) + 'px'
+			  });
+			  rx = 60 / coords.w;
+			  ry = 60 / coords.h;
+			  $('#crop-preview-60').css({
+			    width: Math.round(rx * img_width) + 'px',
+			    height: Math.round(ry * img_height) + 'px',
+			    marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+			    marginTop: '-' + Math.round(ry * coords.y) + 'px'
+			  });
+		}
+
+ 		//编辑结果对话框
+ 		$('#edit_result').dialog({
+		 autoOpen: false,
+		 resizable: false,
+		 modal: true,
+		 open: function(event,ui){		
+			setTimeout(function(){ $('#edit_result').dialog('close')},2000);
+		 }
+ 		});			
+});
+</script>

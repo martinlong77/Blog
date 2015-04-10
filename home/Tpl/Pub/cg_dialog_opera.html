@@ -1,0 +1,88 @@
+<button class="button orange large" id="edit_cg">查看列表</button>
+<script type="text/javascript">
+$(function($){
+ $('#edit_dialog').dialog({
+	autoOpen: false,
+	resizable: false,
+	modal: true
+ });
+		
+ //打开对话框		
+ $('#edit_cg').click(function() {
+  $('#edit_dialog').dialog('open');
+ });
+ 
+ //转移分组
+ $('#select_cg').dialog({
+	autoOpen: false,
+	resizable: false,
+	modal: true,
+	buttons: {
+			  '确认':function(){
+			   var pf_id = $('#pf_id').val();
+			   var cg_id = $('#cg_id').val();
+			   $.post('{$operaUrl.move}',
+        		{pf_id:pf_id,cg_id:cg_id},
+      			function(data){
+	 	   			if (data.status == 1){
+	 	   		<notempty name="Think.get.aid">
+	 	   			$('#id_'+pf_id).hide(800);//图片转移效果	   		
+	 	   		</notempty>
+	 	   		<notempty name="Think.get.cid">
+	 	   			$('#id_'+pf_id).hide(800);//文章转移效果
+	 	   		</notempty>
+	 	   		<notempty name="Think.get.gid">
+	 	   			$('#id_'+pf_id).hide(800);//好友或关注转移效果
+	 	   		</notempty>	 	   			 					
+					$('#pf_id_'+pf_id).attr('cg_id',cg_id);	//其他转移赋值
+					$('#move_result').text(data.info);
+		    		$('#move_result').dialog('open');			
+		   		}	
+  			  });
+			  $(this).dialog('close');
+			},
+			  '取消':function(){ $(this).dialog('close')}
+	}
+ });
+ 
+ //转移结果
+ $('#move_result').dialog({
+	autoOpen: false,
+	resizable: false,
+	modal: true,
+	draggable: false,
+	open: function(event,ui){
+		$('#select_cg').dialog('close');
+		setTimeout(function(){ $('#move_result').dialog('close')},1000);
+	}
+ });
+});
+
+ //转移分组
+ function move_cg(param) {
+  var pf_id = $(param).attr('pf_id');
+  var cg_id = $(param).attr('cg_id');
+  if(cg_id == 0){	//判断是否没有分组
+    var option = '<option value="0">请选择分组</option>';
+	var first_option = $('#cg_id').find('option:first').val();	//获取第一个选项值
+	if (first_option != 0){	//第一个选项不是0分组则添加
+	 $('#cg_id').prepend(option);
+	}
+	$('#cg_id').val(0);
+  } else {
+  	$('#cg_id').val(cg_id);
+  }
+    
+  $('#pf_id').val(pf_id);  
+  $('#select_cg').dialog('open');
+ }
+
+		  </script>
+		  <div id="edit_dialog" title="所有列表">
+		  <include file="Pub:cg_operate" />
+		  </div>
+		  <div id="select_cg" title="请选择">
+		  <include file="Pub:cg_move" />
+		  </div>
+		  <div id="move_result" title="操作结果">	
+		  </div>	 			
